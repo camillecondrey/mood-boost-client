@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+  border: 1px solid black;
+}
+

@@ -1,0 +1,20 @@
+nav {
+  padding: 1% 0;
+  background-color: #aaa;
+  height: 50px;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.add {
+    float: right;
+}
+
+.back {
+    float: left;
+}

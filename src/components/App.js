@@ -23,6 +23,7 @@ export class App extends Component {
           <Route exact path="/record" component={RecordMood} />
           <Route exact path="/tracker" component={MoodTracker} />
           <Route exact path="/mood/:moodId" component={Mood} />
+          
           <Footer />
         </container>
       </Router>

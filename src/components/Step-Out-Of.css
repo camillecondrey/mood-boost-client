@@ -1,0 +1,85 @@
+.mood-title {
+    font-size: 30px;
+    color: #3F3F3F;
+}
+
+.anger {
+    width: 220px;
+    height: 220px;
+    border-radius: 4px;
+    padding: 25px;
+    display: inline-block;
+    box-shadow: 0 0 20px #D3D3D3;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+}
+.anxiety{
+   width: 220px;
+    height: 220px;
+    border-radius: 4px;
+    padding: 25px;
+    display: inline-block;
+    box-shadow: 0 0 20px #D3D3D3;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+
+}
+.blue {
+    width: 220px;
+    height: 220px;
+    border-radius: 4px;
+    padding: 25px;
+    display: inline-block;
+    box-shadow: 0 0 20px #D3D3D3;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+}
+
+.step-out {
+    display: inline-block;
+}
+
+.anger-img {
+    width: 60px;
+    height: 60px;
+}
+
+.anxiety-img {
+    width: 100px;
+    height: 50px;
+}
+
+.blue-img {
+    width: 60px;
+    height: 50px;
+}
+
+.step-out {
+    margin-top: 50px;
+}
+
+button {
+    /*border: 3px solid #de6161;*/
+    background-color: Transparent;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.step-p {
+    font-size: 15px;
+    color: #3F3F3F;
+}
+
+#hover:hover {
+    box-shadow: 0 0 20px #939393;
+}

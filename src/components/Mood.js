@@ -2,20 +2,34 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 
 import NavMood from './Nav-Mood';
+import './Mood.css'
+import MoodTitle from './Mood-Title';
 
 import Transitioners from './Transitioners';
+import ReadModal from './Read-Modal';
+import WatchModal from './Watch-Modal';
+import ListenModal from './Listen-Modal';
+import NourishModal from './Nourish-Modal';
 
-export class Mood extends Component {
-    constructor(props) {
+export function Mood(props) {
+    // constructor(props) {
 
-        super(props) 
-        this.mood = this.props.moods
+    //     super(props) 
+        // this.mood = this.props.moods
+     
     
+    
+    let infoModal;
+    if (props.showInfoModal) {
+        infoModal = <NourishModal />;
     }
-
    
 
-  render() {
+    
+
+    
+
+  /*render() {
     console.log(this.mood);
     let transitioners; 
     
@@ -24,24 +38,32 @@ export class Mood extends Component {
 
         <Transitioners key={index} index={index} moodId={this.props.match.params.moodId}
         {...transitioners} />
-    )}
+    )}*/
+   
 
     return (
-        <container>
+        <div className="body">
             <NavMood />
-            <h1 id="mood">{this.props.match.params.moodId}</h1>
+            <div className="mood-heading">
+                {/*<h1 id="mood">{this.props.match.params.moodId}</h1>*/}
+                {/*<MoodTitle />*/}
+                <p className="how">How would you like to transition?</p>
+            </div>
             <div className="transitioners">
                <Transitioners />
+               {infoModal}
             </div>
-        </container>
+        </div>
     )
   }
-}
+
 
 const mapStateToProps = (state, props) => {
     return {
-        moods: state.moods
+        moods: state.moods,
+        showInfoModal: state.showInfoModal
     }
 }
 
 export default connect(mapStateToProps)(Mood);
+

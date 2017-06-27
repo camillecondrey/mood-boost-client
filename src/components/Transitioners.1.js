@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './Transitioners.css'
-import {toggleReadModal, toggleNourishModal, toggleListenModal, read, watch, listen, nourish, toggleWatchModal} from '../actions/index';
+import {toggleReadModal, read, watch, listen, nourish} from '../actions/index';
 import $ from 'jquery';
 import {collapse} from 'jquery';
 import TransitionModal from './Transition-Modal';
-import ReadModal from './Read-Modal';
-import WatchModal from './Watch-Modal';
-import ListenModal from './Listen-Modal';
-import NourishModal from './Nourish-Modal';
 
 
 export class Transitioners extends Component {
@@ -28,24 +24,9 @@ export class Transitioners extends Component {
     }
 
 
-toggleListenModal(event) {
-        event.preventDefault();
-        this.props.dispatch(toggleListenModal());
-    }
-
-    toggleNourishModal(event) {
-        event.preventDefault();
-        this.props.dispatch(toggleNourishModal());
-    }
-
  toggleReadModal(event) {
         event.preventDefault();
         this.props.dispatch(toggleReadModal());
-    }
-
-    toggleWatchModal(event) {
-        event.preventDefault();
-        this.props.dispatch(toggleWatchModal());
     }
 
     render() {
@@ -76,7 +57,7 @@ toggleListenModal(event) {
             </div>
         </a>
 
-         <a href="" onClick={e => this.toggleWatchModal(e)}>
+         <a href="" onClick={e => this.toggleReadModal(e)}>
             <div id="hover" className="watch">
                 <img className="watch-img" src="../images/watch.png"></img>
                 <h1 className="tran-title">Watch</h1>
@@ -86,14 +67,14 @@ toggleListenModal(event) {
         </section>
         <section className="second-pair">
 
-         <a href="" onClick={e => this.toggleListenModal(e)}>
+         <a href="" onClick={e => this.toggleReadModal(e)}>
             <div id="hover" className="listen">
                 <img className="listen-img" src="../images/listen.png"></img>
                 <h1 className="tran-title">Listen</h1>
                 <p className="tran-sub-head">Tune in, drop out</p>
             </div>
         </a>
-         <a href="" onClick={e => this.toggleNourishModal(e)}>
+         <a href="" onClick={e => this.toggleReadModal(e)}>
             <div id="hover" className="nourish">
                 <img className="nourish-img" src="../images/nourish.png"></img>
                 <h1 className="tran-title">Nourish</h1>

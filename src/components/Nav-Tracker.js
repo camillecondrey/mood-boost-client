@@ -9,7 +9,7 @@ export class NavTracker extends Component {
         return (
             <nav>
                 <button className="back"><Link to="/boosters">Back to Mood Boosters</Link></button>
-                <button className="add"><Link to="/record">Add new mood</Link></button>
+                
             </nav>
         )
     }

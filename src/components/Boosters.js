@@ -4,6 +4,7 @@ import StepOutOf from './Step-Out-Of';
 
 import {connect} from 'react-redux';
 import NavBoosters from './Nav-Boosters';
+import './Boosters.css'
 
 
 export class Boosters extends Component {
@@ -13,32 +14,20 @@ export class Boosters extends Component {
             showStepOutOf: true
         };
     }
-
-    // displayStepIn(event) {
-    //     event.preventDefault();
-    //     if (this.props.displayStepIn) {
-    //         this.props.displayStepIn();
-    //     }
-    //     this.props.dispatch(stepIn());
-    // }
-
-    // displayStepOut(event) {
-    //     event.preventDefault();
-    //     if (this.props.displayStepOut) {
-    //         this.props.displayStepOut();
-    //     }
-    //     this.props.dispatch(stepOut());
-    // }
-
     render() {
         return (
             <container>
                 <NavBoosters />
-                <h1>Mood Boosters</h1>
-                    <div>
-                     <h2>Step Out of</h2>
+                    <section id="wave" className="heading-section">
+                        <h1 className="heading">The Boosters</h1>
+                        <div id="description">
+                            <p>Choose a negative mood you would like to step out of or a positive mood you would like to step into.</p>
+                        </div>
+                        
+                    </section>
+                    
+                    <div className="all-moods">
                      <StepOutOf />
-                     <h2>Step Into</h2>
                      <StepInto />
                     </div>
             </container>

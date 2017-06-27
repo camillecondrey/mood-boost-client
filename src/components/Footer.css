@@ -1,4 +1,6 @@
 footer {
   padding: 1% 0;
-  background-color: #aaa;
+  /*background-image: linear-gradient(to right, #de6161, #2657eb);*/
+  background-color: white;
+  height: 80px;
 }

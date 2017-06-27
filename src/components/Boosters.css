@@ -1,0 +1,61 @@
+.heading {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    font-family: Georgia;
+    font-size: 80px;
+    color: white;
+    text-align: left;
+}
+
+.heading > div {
+    width: 500px;
+}
+
+.heading-section {
+    width: 1100px;
+    border-radius: 0 0 1000px 0;
+    background-image: linear-gradient(to right, #de6161, #2657eb);
+    border: none;
+}
+
+
+* {
+    font-family: Georgia;
+}
+
+.all-moods {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.description {
+    width: 800px;
+
+}
+
+#description > p {
+    color: white;
+    text-align: left;
+    margin-left: 40px;
+    font-size: 25px;
+    line-height: 40px;
+    width: 600px;
+}
+
+.start {
+    float: right;
+    margin-right: 90px;
+    /*margin-bottom: 900px;*/
+
+}
+
+.large {
+    height: 600px;
+    width: 1400px;
+}
+
+.button {
+    float: right;
+}
+

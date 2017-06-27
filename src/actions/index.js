@@ -1,21 +1,31 @@
+import axios from 'axios';
+const url = "http://localhost:8080"
+
 export const CREATE_ACCOUNT = 'CREATE_ACCOUNT';
-export const createAccount = () => ({
-    type: CREATE_ACCOUNT
+export const createAccount = (username, password) => ({
+    type: CREATE_ACCOUNT,
+    promise: fetch(url + '/users/me', {
+        method: "POST",
+        headers: {
+            Authorization: "Basic " + btoa(username + ":" + password)
+        }
+    })
+})
+
+export const LOG_IN = 'LOG_IN';
+export const logIn = (username, password) => ({
+    type: LOG_IN,
+    promise: fetch(url + "/users/me", {
+        method: "POST",
+        headers: {
+            Authorization: "Basic " + btoa(username + ":" + password)
+        }
+    })
 })
 
 export const ANGER = 'ANGER';
 export const anger = () => ({
-    type: ANGER,
-    read: 
-            `<p>"It’s dark because you are trying too hard. 
-                    Lightly child, lightly. Learn to do everything lightly. 
-                    Yes, feel lightly even though you’re feeling deeply. 
-                    Just lightly let things happen and lightly cope with them.
-                     Lightly, lightly – it’s the best advice ever given me. There are quicksands 
-                     all about you, sucking at your feet, 
-                     trying to suck you down into fear and self-pity and despair. 
-                     That’s why you must walk so lightly. 
-                    Lightly my darling" -Aldous Huxley</p>`
+    type: ANGER
 })
 
 export const ANXIOUS = 'ANXIOUS';
@@ -42,3 +52,60 @@ export const ENERGETIC = 'ENERGETIC';
 export const energetic = () => ({
     type: ENERGETIC
 })
+
+export const TOGGLE_TRANSITION_MODAL = 'TOGGLE_TRANSITION_MODAL';
+export const toggleTransitionModal = () => ({
+    type: TOGGLE_TRANSITION_MODAL
+})
+
+export const RECORD_MOOD = 'RECORD_MOOD';
+export const recordMood = () => ({
+    type: RECORD_MOOD
+})
+
+export const FETCH_MOOD = 'FETCH_MOOD';
+export const fetchMood = () => ({
+    type: FETCH_MOOD,
+    promise: axios(url + "/tracker")
+})
+
+export const READ = 'READ';
+export const read = () => ({
+    type: READ
+})
+
+export const WATCH = 'WATCH';
+export const watch = () => ({
+    type: WATCH
+})
+
+export const LISTEN = 'LISTEN';
+export const listen = () => ({
+    type: LISTEN
+})
+
+export const NOURISH = 'NOURISH';
+export const nourish = () => ({
+    type: NOURISH
+})
+
+export const TOGGLE_READ_MODAL = "TOGGLE_READ_MODAL";
+export const toggleReadModal = () => ({
+    type: TOGGLE_READ_MODAL
+})
+
+export const TOGGLE_WATCH_MODAL = "TOGGLE_WATCH_MODAL";
+export const toggleWatchModal = () => ({
+    type: TOGGLE_WATCH_MODAL
+})
+
+export const TOGGLE_LISTEN_MODAL = "TOGGLE_LISTEN_MODAL";
+export const toggleListenModal = () => ({
+    type: TOGGLE_LISTEN_MODAL
+})
+
+export const TOGGLE_NOURISH_MODAL = "TOGGLE_NOURISH_MODAL";
+export const toggleNourishModal = () => ({
+    type: TOGGLE_NOURISH_MODAL
+})
+

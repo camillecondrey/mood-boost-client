@@ -1,0 +1,20 @@
+#mood {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 40px;
+}
+
+.body {
+    background: linear-gradient(#5B86E5, #36D1DC);
+    height: 100%;
+}
+
+/*.mood-heading {
+    background: linear-gradient(#5B86E5, #36D1DC);
+}*/
+
+.how {
+    color: white;
+    font-size: 20px;
+}

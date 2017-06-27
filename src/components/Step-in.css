@@ -1,0 +1,100 @@
+.mood-title {
+    font-size: 100px;
+    color: #3F3F3F;
+}
+
+.tranquil {
+    width: 220px;
+    height: 220px;
+    border-radius: 4px;
+    padding: 25px;
+    display: inline-block;
+    box-shadow: 0 0 20px #D3D3D3;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+
+}
+.romantic {
+    /*width: 400px;
+        display: inline-block */
+    width: 220px;
+    height: 220px;
+    border-radius: 4px;
+    padding: 25px;
+    display: inline-block;
+    box-shadow: 0 0 20px #D3D3D3;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    
+
+}
+.energized {
+    /*width: 400px;
+        display: inline-block*/
+    width: 220px;
+    height: 220px;
+    border-radius: 4px;
+    padding: 25px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0 0 20px #D3D3D3;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.energy-img {
+    width: 50px;
+    height: 60px;
+}
+
+.romance-img {
+    width: 70px;
+    height: 50px;
+}
+
+.tranquil-img {
+    width: 55px;
+    height: 50px;
+}
+
+.stepin {
+    margin-top: 130px;
+    margin-bottom: 160px;
+    display: inline-block !important;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.step-button {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.step-p {
+    font-size: 15px;
+    color: #3F3F3F;
+}
+
+#hover:hover {
+    box-shadow: 0 0 20px #939393;
+}

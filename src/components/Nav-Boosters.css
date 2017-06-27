@@ -1,7 +1,9 @@
 nav {
   padding: 1% 0;
-  background-color: #aaa;
-  height: 50px;
+  /*background-image: linear-gradient(to right, #de6161, #2657eb);*/
+  background-color: white;
+  box-shadow: 4px 3px 4px #D3D3D3;
+  height: 70px;
 }
 
 nav {
@@ -15,8 +17,33 @@ nav {
 
 .track {
     float: right;
+    margin-right: 30px;
+    width: 170px;
+    font-size: 15px;
+    background-color: white;
+    color: #7e7e7e;
+    border: 1px solid #7e7e7e;
+    border-radius: 20px;
+    
+}
+
+.track > a {
+  text-decoration: none;
+  color: #7e7e7e;
 }
 
 .about {
     float: left;
+    margin-left: 30px !important;
+    font-size: 15px;
+    
+    background-color: white;
+    color: #7e7e7e;
+    border: 1px solid #7e7e7e;
+    border-radius: 20px;
+}
+
+.about > a {
+  text-decoration: none;
+  color: #7e7e7e;
 }

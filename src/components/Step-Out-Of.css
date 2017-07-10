@@ -14,6 +14,18 @@
     margin-right: 100px;
     background-color: white;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .anger .anxiety .blue {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
+  }
+
 .anxiety{
    width: 220px;
     height: 220px;

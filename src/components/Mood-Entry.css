@@ -1,0 +1,50 @@
+.mood {
+    background-color: white;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    /*padding-left: 60px;*/
+    text-align: left;
+    border-radius: 4px;
+    box-shadow: 0 0 20px #D3D3D3;
+    margin-bottom: 50px;
+}
+
+.top-bar {
+    padding-left: 40px;
+}
+
+.entry-description {
+    /*display: inline-block;*/
+    width: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entry-date {
+    display: inline-block;
+     margin-right: 40px;
+}
+
+.entry-duration {
+    display: inline-block;
+   
+}
+
+.entry-cause {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .anger .anxiety .blue {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
+  }

@@ -6,8 +6,9 @@ import './Nav.css';
 export class Nav extends Component {
     render() {
         return (
-            <nav>
-                <button className="about">About</button>
+            <nav className="main-nav">
+                {/*<button className="about">About</button>*/}
+                {/*<p className="app-title">mood boost</p>*/}
                 <LogIn />
                 
             </nav>

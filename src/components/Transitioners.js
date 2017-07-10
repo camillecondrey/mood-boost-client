@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './Transitioners.css'
-import {toggleReadModal, toggleNourishModal, toggleListenModal, read, watch, listen, nourish, toggleWatchModal} from '../actions/index';
+import {toggleReadModal, toggleNourishModal, 
+    toggleListenModal, read, watch, listen, 
+    nourish, toggleWatchModal} from '../actions/index';
 import $ from 'jquery';
-import {collapse} from 'jquery';
+
 import TransitionModal from './Transition-Modal';
 import ReadModal from './Read-Modal';
 import WatchModal from './Watch-Modal';
@@ -12,25 +14,25 @@ import NourishModal from './Nourish-Modal';
 
 
 export class Transitioners extends Component {
-    constructor(props) {
+    // constructor(props) {
 
-        super(props) 
-        this.read = this.props.read
+    //     super(props) 
+        // this.read = this.props.read
     
-        this.watch = this.props.watch.src
+        // this.watch = this.props.watch
     
-        this.listen = this.props.listen
-        this.nourish = this.props.nourish
-        this.intro = this.props.watch.intro
-
+        // this.listen = this.props.listen
+        // this.nourish = this.props.nourish
+        // this.intro = this.props.watch.intro
      
         
-    }
+    
 
 
 toggleListenModal(event) {
         event.preventDefault();
         this.props.dispatch(toggleListenModal());
+      
     }
 
     toggleNourishModal(event) {
@@ -50,14 +52,14 @@ toggleListenModal(event) {
 
     render() {
 
-       let listen 
-        if (this.listen.youtube) {
-            listen = <iframe src={this.listen.youtube} width="500" height="269" frameBorder="0" allowTransparency="true"></iframe>
-        }
-        else {
-            listen = <iframe src={this.listen.spotify} width="300" height="380" frameBorder="0" allowTransparency="true"></iframe>
+    //    let listen 
+    //     if (this.listen.youtube) {
+    //         listen = <iframe src={this.listen.youtube} width="500" height="269" frameBorder="0" allowTransparency="true"></iframe>
+    //     }
+    //     else {
+    //         listen = <iframe src={this.listen.spotify} width="300" height="380" frameBorder="0" allowTransparency="true"></iframe>
 
-        }
+    //     }
   
 
       
@@ -109,16 +111,16 @@ toggleListenModal(event) {
     }
 }
 
-const mapStatetoProps = state => ({
+// const mapStatetoProps = state => ({
     
-    watch: state.watch,
-    read: state.read,
-    listen: state.listen,
-    nourish: state.nourish,
+//     watch: state.watch,
+//     read: state.read,
+//     listen: state.listen,
+//     nourish: state.nourish,
    
-});
+// });
 
-export default connect(mapStatetoProps)(Transitioners);
+export default connect(Transitioners);
 
 
 

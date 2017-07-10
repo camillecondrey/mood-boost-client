@@ -9,18 +9,18 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 export class CreateAccount extends React.Component {
 
 
-signUp (username, password) {
-	console.log('creating user account');
-	$.ajax({ 
-		url: '/users', 
-		type: 'POST', 
-		data: JSON.stringify({username, password}), 
-		contentType: 'application/json', success: function(got) { 
-			localStorage.headers = "Basic "+ btoa(username+ ":" + password)
-			window.location = '/boosters/id=';
-		} 
-	});
-}
+// signUp (username, password) {
+// 	console.log('creating user account');
+// 	$.ajax({ 
+// 		url: '/users', 
+// 		type: 'POST', 
+// 		data: JSON.stringify({username, password}), 
+// 		contentType: 'application/json', success: function(got) { 
+// 			localStorage.headers = "Basic "+ btoa(username+ ":" + password)
+// 			window.location = '/boosters/id=';
+// 		} 
+// 	});
+// }
 
     handleNewUser (e) {
         e.preventDefault();
@@ -35,7 +35,15 @@ signUp (username, password) {
                     username: $("#username").val() , 
                     password: $('#password').val()
             } 
-            this.props.dispatch(createAccount());
+            this.props.dispatch(createAccount(newUser))
+            .then(() => {
+                if (localStorage.headers) {
+                window.location = "/boosters"
+            }
+            else if (!localStorage.headers) {
+                window.location = '/'
+            }
+            }) 
     }
     }
 
@@ -43,12 +51,13 @@ signUp (username, password) {
         return (
             <div>
                 <div className="create">
-                    <h3>Create Account</h3>
-                    <p>You can always access mood boosters with out an account. <br/>If you wish to track your moods, create a username and password.</p>
+                    <h3 className="create-h3">A better mood awaits you</h3>
+                    <div className="smile2"></div>
+                    <p className="create-p">Create a username and password to start tracking your moods <br/> or demo this app with username <b>abc</b> and password <b>123</b></p>
                     <form className="create-form" method="post" onSubmit={this.handleNewUser.bind(this)}>
                         <input type="username" placeholder="username" name="username" id="username" required/>
                         <input type="password" placeholder="password" name="password" id="password" required/>
-                        <button type="submit" id="create-submit"><Link to="/boosters/">Submit</Link></button>
+                        <button type="submit" id="create-submit">Boost your mood</button>
                     </form>
                 </div>
             </div>

@@ -2,25 +2,32 @@ import axios from 'axios';
 const url = "http://localhost:8080"
 
 export const CREATE_ACCOUNT = 'CREATE_ACCOUNT';
-export const createAccount = (username, password) => ({
+export const createAccount = (newUser) => ({
     type: CREATE_ACCOUNT,
-    promise: fetch(url + '/users/me', {
+    meta: newUser,
+    promise: fetch(url + '/users/', {
         method: "POST",
-        headers: {
-            Authorization: "Basic " + btoa(username + ":" + password)
-        }
+        body: JSON.stringify(newUser),
+        headers: { 'Accept': 'application/json, text/plain, /', 'Content-Type': 'application/json' }
+        
     })
 })
 
 export const LOG_IN = 'LOG_IN';
 export const logIn = (username, password) => ({
     type: LOG_IN,
+    meta: {username, password},
     promise: fetch(url + "/users/me", {
-        method: "POST",
+        method: "GET",
         headers: {
             Authorization: "Basic " + btoa(username + ":" + password)
         }
     })
+})
+
+export const LOG_OUT = 'LOG_OUT';
+export const logOut = () => ({
+    type: LOG_OUT
 })
 
 export const ANGER = 'ANGER';
@@ -59,14 +66,29 @@ export const toggleTransitionModal = () => ({
 })
 
 export const RECORD_MOOD = 'RECORD_MOOD';
-export const recordMood = () => ({
-    type: RECORD_MOOD
+export const recordMood = (newMood) => ({
+    type: RECORD_MOOD,
+    promise: axios(url + "/tracker", {
+        method: "POST",
+        data: JSON.stringify(newMood),
+        headers: {
+            'Content-Type': 'application/json',
+            Authorization: localStorage.headers
+        }
+    })
 })
 
 export const FETCH_MOOD = 'FETCH_MOOD';
 export const fetchMood = () => ({
     type: FETCH_MOOD,
-    promise: axios(url + "/tracker")
+    promise: axios(url + "/tracker", {
+        method: "GET",
+        // body: JSON.stringify(newMood),
+        headers: {
+            // Authorization: "Basic " + btoa(username + ":" + password)
+            Authorization: localStorage.headers
+        }
+})
 })
 
 export const READ = 'READ';

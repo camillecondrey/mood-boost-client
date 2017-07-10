@@ -8,7 +8,7 @@ export class NavRecord extends Component {
     render() {
         return (
             <nav>
-                <button className="back"><Link to="/tracker">Back to Mood Tracker</Link></button>
+                <button className="record-back"><Link to="/tracker">Back to Mood Tracker</Link></button>
             </nav>
         )
     }

@@ -1,0 +1,23 @@
+.boost-button {
+    border-radius: 50px;
+    width: 250px;
+    height: 80px;
+    font-size: 22px;
+    margin-bottom: 50px;
+    background-color: #007991;
+    border: none;
+    margin-top: 100px;
+    color: white;
+    
+}
+
+.boost-button > a {
+    color: white;
+}
+
+.boost-div {
+    height: 300px;
+      background-color: #ECECEC;
+    
+}
+

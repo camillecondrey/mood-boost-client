@@ -1,9 +1,8 @@
-nav {
+.boosters-nav {
   padding: 1% 0;
-  /*background-image: linear-gradient(to right, #de6161, #2657eb);*/
-  background-color: white;
-  box-shadow: 4px 3px 4px #D3D3D3;
+  background-color: transparent;
   height: 70px;
+  box-shadow: none;
 }
 
 nav {
@@ -14,20 +13,20 @@ nav {
 }
 
 
-
-.track {
+.boosters-track {
     float: right;
     margin-right: 30px;
     width: 170px;
     font-size: 15px;
     background-color: white;
     color: #7e7e7e;
-    border: 1px solid #7e7e7e;
+    border: none;
     border-radius: 20px;
+    margin-top: 30px;
     
 }
 
-.track > a {
+.boosters-track > a {
   text-decoration: none;
   color: #7e7e7e;
 }
@@ -39,7 +38,7 @@ nav {
     
     background-color: white;
     color: #7e7e7e;
-    border: 1px solid #7e7e7e;
+    border: none;
     border-radius: 20px;
 }
 

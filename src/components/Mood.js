@@ -21,7 +21,7 @@ export function Mood(props) {
     
     let infoModal;
     if (props.showInfoModal) {
-        infoModal = <NourishModal />;
+        infoModal = <ReadModal />;
     }
    
 
@@ -46,7 +46,7 @@ export function Mood(props) {
             <NavMood />
             <div className="mood-heading">
                 {/*<h1 id="mood">{this.props.match.params.moodId}</h1>*/}
-                {/*<MoodTitle />*/}
+                <MoodTitle />
                 <p className="how">How would you like to transition?</p>
             </div>
             <div className="transitioners">

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import './Transitioners.css'
+import './Modal.css'
 import {toggleReadModal, read, watch, listen, nourish} from '../actions/index';
-import $ from 'jquery';
+
 
 
 export class ReadModal extends Component {
@@ -30,10 +30,10 @@ export class ReadModal extends Component {
                 <div className="content">
                     <h3>Wise words:</h3>
                     <div>
-                        <p>{this.read}</p>
+                        <p className="read-text">{this.read}</p>
                        
-                        <p>So, Are you ready?</p>
-                        <a className="close" href="#" onClick={e => this.hide(e)}>Got It!</a>
+                        
+                        <a className="close" href="#" onClick={e => this.hide(e)}>Close</a>
                     </div>
                 </div>
             </div>

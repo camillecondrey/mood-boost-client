@@ -1,47 +1,29 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './Mood-Entry.css'
-import {toggleAccordion} from '../actions/index';
 
 
-export class MoodEntry extends Component {
-    constructor(props) {
 
-        super(props) 
-        // this.mood.description = this.props.mood.description
-        // this.mood.date = this.props.mood.date
-        // this.mood.cause = this.props.mood.cause
-        // this.mood.duration = this.props.mood.duration
-    }
+export default class MoodEntry extends Component {
     
 
     render () {
         return (
             <container className="moods">
                 <div className="mood">
-                    <h3>{}</h3>
-                    <p>{}</p>
-                    <p className="cause">{}</p>
-                    <p className="duration">{}</p>
+                    
+                        <h3 className="entry-description">{this.props.mood.description}</h3>
+                        <div className="top-bar">
+                        <p className="entry-date"><b>Date:</b> {this.props.mood.date}</p>
+                        <p className="entry-duration"><b>Duration:</b> {this.props.mood.duration}</p>
+                    
+                    <p className="entry-cause"><b>Cause: </b>{this.props.mood.cause}</p>
+                    </div>
                 </div>
-                
-
             </container>
         )
     }
 }
 
-
-
-
-// const mapStatetoProps = state => ({
-    
-//     description: state.mood.description,
-//     date: state.mood.date,
-//     cause: state.mood.cause,
-//     duration: state.duration.cause,
-// });
-
-export default connect()(MoodEntry);
 
 

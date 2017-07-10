@@ -1,6 +1,6 @@
-nav {
+.main-nav {
   padding: 1% 0;
-  background-color: #aaa;
+  background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
   height: 50px;
 }
 
@@ -21,4 +21,11 @@ nav {
 
 .log-in {
     float: right;
+}
+
+.app-title {
+    float: left;
+    font-size: 60px;
+    margin-left: 40px;
+    margin-top: 10px;
 }

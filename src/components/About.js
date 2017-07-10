@@ -11,32 +11,54 @@ export class About extends Component {
     return (
         <container>
         <Nav />
-      <div> 
-           
-           <header>
-                <h1 className="app-name">Mood Boost</h1>
-                    <h2>Only you have the power to control your mood, but sometimes it's easy to let  our mood control us.
-                        Take back the power with Mood Boost, designed to help users break out of toxic moods and step into a 
+      <div className="about-body"> 
+       <div className="title" >
+           <header className="about-header">
+                <h1 className="app-name">mood boost</h1>
+                <div className="frown"></div>
+                <div className="smile"></div>
+                    <h2 className="app-sub-heading">Only you have the power to control your mood, but sometimes it's easy to let  our mood control us.
+                        <br/>
+                        <br/>Take back the power with Mood Boost, designed to help users break out of toxic moods and step into a 
                         better one.
                     </h2>
             </header>
-        <section>
-            
-                <h3>Select the mood you want to get out of or step into</h3>
-                <p>[placeholder for screenshot of mood booster]</p>
-                <p>Mood Boost offers three moods to break out of and three moods to step into</p>
-            </section>
-            <section>
-                <h3>Choose how you want to transition</h3>
-                <p>[placeholder for screenshot of inside mood booster]</p>
-                <p>Mood Boost offers visual, audible and interactive strategies to help users adjust their moods</p>
-            </section>
-            <section>
-                <h3>Track your moods and what is causing them</h3>
-                <p>[placeholder for screenshot of mood calendar]</p>
-                <p>Moods become easier to control when you realize what causes them to happen in the first place</p>
-            </section> 
-            <BoostButton />
+        </div>
+         <div className="how-div">
+                <h2 className="how-heading">How it works</h2>
+                <div className="smile2"></div>
+            </div>
+        <div className="about-section">
+           
+                <div className="h3-div">
+                    <h3 className="about-h3">Step in or step out</h3>
+                    <p className="about-p">Mood Boost offers six moods to transition into or out of.</p>
+                </div>
+                <div className="image-div">
+                    <img className="screenshot" src="../images/moods.png"></img>
+                </div>
+                
+            </div>
+            <div className="about-section">
+            <div className="image-div">
+                <img className="screenshot2" src="../images/transitioners.png"></img>
+            </div>
+            <div className="h3-div">
+                <h3 className="about-h32">Transition</h3>
+                <p className="about-p">Choose from visual, audible and interactive strategies to adjust your mood</p>
+            </div>
+
+            </div>
+            <div className="about-section">
+                <div className="h3-div">
+                    <h3 className="about-h3">Track your moods</h3>
+                    <p className="about-p">Record what is causing your moods to help identify a pattern</p>
+                </div>
+                <div className="image-div">
+                    <p>[placeholder for screenshot of mood tracker]</p>
+                </div>
+            </div> 
+            {/*<BoostButton />*/}
             <CreateAccount />
         </div>
         </container>

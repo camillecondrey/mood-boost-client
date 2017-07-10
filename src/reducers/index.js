@@ -15,13 +15,16 @@ export const moodsReducer = (state=initialState, action) => {
 	state = state || initialState;
 	if (action.type === ANGER) {
 		state = Object.assign({}, initialState, {
-            read: `Take several deep breaths and focus on the exhale and the inhale. Become aware 
-                    of how far you are breathing into your belly. Breath in and hold for two to three 
-                     seconds and then exhale slowly. Some people find it useful to imagine their breath as 
-                    a color going around their body.
+            read: `Breathe deeply, from your diaphragm. Breathing from your chest won't relax you, 
+            so picture your breath coming up from your "gut."
+            Slowly repeat a calming word or phrase, 
+            such as "relax" or "take it easy." Keep repeating it to yourself while breathing deeply.
+            
                     Go out and do something physical. This might be to walk, or 
                     running or just try jumping up and down on the spot. It helps disperse the chemicals    
-                    building up in your muscles`,
+                    building up in your muscles.
+                    Our mood influences our expression and vice versa: Lock yourself into a bathroom stall 
+                    and grin like a maniac for about 2 minutes. It’s weird but it helps.`,
             watch: {
                 intro: "Let yourself feel weightless",
                 src: "https://img.buzzfeed.com/buzzfeed-static/static/2014-04/enhanced/webdr05/22/7/anigif_enhanced-11392-1398165075-4.gif?downsize=715:*&output-format=auto&output-quality=auto"
@@ -115,9 +118,7 @@ export const moodsReducer = (state=initialState, action) => {
         })
     } 
 
-    else if (action.type === RECORD_MOOD) {
-        return state;
-    }
+   
 
     else if (action.type === TOGGLE_TRANSITION_MODAL) {
          state = Object.assign({}, state, {

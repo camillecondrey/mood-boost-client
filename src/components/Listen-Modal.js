@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import './Transitioners.css'
+import './Modal.css'
 import {toggleListenModal, read, watch, listen, nourish} from '../actions/index';
 import $ from 'jquery';
+
 
 
 export class ListenModal extends Component {
@@ -43,7 +44,7 @@ export class ListenModal extends Component {
                         <p>{this.listen}</p>
                        
                         
-                        <a className="close" href="#" onClick={e => this.hide(e)}>X</a>
+                        <a className="close" href="#" onClick={e => this.hide(e)}>Close</a>
                     </div>
                 </div>
             </div>

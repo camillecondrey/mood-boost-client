@@ -2,7 +2,38 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
-    margin-top: 30px;
+    border-radius: 40px;
+    margin-top: 25px;
+    background-color: #1c92d2;
+    border: none;
+    margin-bottom: 150px;
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    
 }
 
+.create-h3 {
+    font-size: 30px;
+    margin: auto;
+    padding-top: 75px;
+    color: #1c92d2;
+  
+}
+
+.create-p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #1c92d2;
+}
+
+.create {
+    /*background-image: linear-gradient(to right, #007991, #78ffd6);*/
+    padding-bottom: 75px;
+    background-color: #f9f9f9;
+}
+
+#username {
+    margin-right: 5px;
+}

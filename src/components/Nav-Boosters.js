@@ -7,9 +7,9 @@ import './Nav-Boosters.css';
 export class NavBoosters extends Component {
     render() {
         return (
-            <nav>
+            <nav className="boosters-nav">
                 <button className="about"><Link to="/">About</Link></button>
-                <button className="track"><Link to="/tracker">Track your moods</Link></button>
+                <button className="boosters-track"><Link to="/tracker">Track your moods</Link></button>
             </nav>
         )
     }

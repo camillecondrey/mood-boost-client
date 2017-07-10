@@ -19,7 +19,7 @@ export class MoodTracker extends Component {
   render() {
     let moods;
       if (this.props.moods) {
-          moods = this.props.mood.map(m => {
+          moods = this.props.moods.map(m => {
             return <MoodEntry mood = {m}/>
           })
       }
@@ -35,7 +35,6 @@ export class MoodTracker extends Component {
             <button className="add"><Link to="/record">Add new mood</Link></button>
         </header>
         <section>
-            <MoodEntry />
            {moods}
         </section>
         </div>
@@ -45,7 +44,7 @@ export class MoodTracker extends Component {
 }
 
 const mapStateToProps = state => ({
-    moods: state.moods
+    moods: state.trackingReducer.moods
 });
 
 export default connect(mapStateToProps)(MoodTracker);

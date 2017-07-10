@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import './Transitioners.css'
+import './Modal.css'
 import {toggleWatchModal, read, watch, listen, nourish} from '../actions/index';
 import $ from 'jquery';
 
@@ -34,12 +34,12 @@ export class WatchModal extends Component {
             <div className="overlay" id="modal">
                 <div className="content">
                     <h3>Wise words:</h3>
-                    <div>
+                    
                         <img src={this.watch}></img>
                        
-                        <p>So, Are you ready?</p>
-                        <a className="close" href="#" onClick={e => this.hide(e)}>Got It!</a>
-                    </div>
+                       
+                        <a className="close" href="#" onClick={e => this.hide(e)}>Close</a>
+                    
                 </div>
             </div>
         );

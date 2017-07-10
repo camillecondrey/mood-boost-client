@@ -1,6 +1,6 @@
 nav {
   padding: 1% 0;
-  background-color: white;
+  background-color: transparent;
   height: 70px;
 }
 
@@ -13,6 +13,19 @@ nav {
 
 
 
-.back {
-    float: left;
+
+.record-back {
+  background-color: white;
+  margin-left: 20px;
+  width: 160px;
+  font-size: 15px;
+  float: left;
+  border: 1px solid;
+  color: #7e7e7e;
+  border-radius: 20px;
+  
+}
+
+.record-back > a {
+  color: #6C7A89;
 }

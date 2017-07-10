@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import './Transitioners.css'
+import './Modal.css'
 import {toggleNourishModal, read, watch, listen, nourish} from '../actions/index';
 import $ from 'jquery';
 
@@ -35,7 +35,7 @@ export class NourishModal extends Component {
                         <p>{this.nourish}</p>
                        
                         
-                        <a className="close" href="#" onClick={e => this.hide(e)}>X</a>
+                        <a className="close" href="#" onClick={e => this.hide(e)}>Close</a>
                     </div>
                 </div>
             </div>

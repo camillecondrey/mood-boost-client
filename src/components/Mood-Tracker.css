@@ -20,10 +20,17 @@
     background-color: white;
     border-radius: 20px;
     border: none;
+    font-size: 15px;
+    width: 150px;
+}
+
+.add > a {
+    color: #6C7A89;
 }
 
 .tracker-body {
     background: linear-gradient(#4568DC, #B06AB3);
+    height: 100%;
 }
 
 section {

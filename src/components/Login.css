@@ -1,0 +1,20 @@
+#log-in-button {
+    border-radius: 20px;
+    background-color: white;
+    font-size: 15px;
+    font-family: Georgia;
+    border: none;
+    margin-right: 30px;
+    color: #6C7A89;
+}
+
+#log-in-button > a {
+    color: #6C7A89;
+}
+
+.login {
+    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 40px;
+}

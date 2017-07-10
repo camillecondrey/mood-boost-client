@@ -7,24 +7,31 @@ export class MoodTitle extends Component {
     constructor(props) {
 
         super(props) 
-        this.mood = this.props.moods
+        this.mood = this.props.mood
+        // this.mood = this.props.match.params.moodId
     }
 
         
     render() {
     console.log(this.mood);
-    let transitioners; 
+    /*let transitioners; 
     
     if (this.props.transitioners) {
         transitioners = this.props.transitioners.map((transitioners, index) =>
 
-        <Transitioners key={index} index={index} moodId={this.props.match.params.moodId}
+        <MoodTitle key={index} index={index} moodId={this.props.match.params.moodId}
         {...transitioners} />
-    )}
+    )}*/
+    let moods;
+    if (this.props.moods) {
+        moods = this.props.moods.map((moods, index) => 
+        <MoodTitle key={index} index={index} moodId={this.props.match.params.moodId}
+        {...moods} />)
+    }
 
     return (
 
-        <h1 id="mood">{this.props.match.params.moodId}</h1>
+        <h1 id="mood">{this.mood}</h1>
 
     )
 }

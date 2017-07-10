@@ -1,5 +1,6 @@
 import {moodsReducer, userReducer, trackingReducer} from '../reducers/index';
-import {anger, anxious, energized, romantic, blue, tranquil} from '../actions/index'
+import {anger, anxious, energized, romantic, blue, tranquil} from '../actions/index';
+import axios from 'axios';
 
 describe('moodsReducer', () => {
 	it('should set the intitial state when nothing is passed in', () => {

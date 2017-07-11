@@ -53,12 +53,12 @@ handleMoodAdd(e) {
             <form id="record-mood" onSubmit={this.handleMoodAdd.bind(this)}>
                 <div className="form-section">
                     <label for="date">When were you in this mood?</label>
-                    {/*<input type="number" name="date-month" className="date-month" placeholder="01" min="1" max="12" required=""/>  .
+                    <input type="number" name="date-month" className="date-month" placeholder="01" min="1" max="12" required=""/>  .
                     <input type="number" name="date-day" className="date-day" placeholder="01" min="1" max="31" required=""/>  .
-                    <input type="number" name="date-year" className="date-year" min="2016" max="2017" placeholder="2017"/>*/}
-                    <input className="date-month"/>
+                    <input type="number" name="date-year" className="date-year" min="2016" max="2017" placeholder="2017"/>
+                    {/*<input className="date-month"/>
                     <input className="date-day"/>
-                    <input className="date-year"/>
+                    <input className="date-year"/>*/}
                 </div>
                 <div className="form-section">
                     <label for="mood-title">What type of mood was it?</label>

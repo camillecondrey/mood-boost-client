@@ -35,7 +35,10 @@ export class WatchModal extends Component {
                 <div className="content">
                     <h3>Find your happy place:</h3>
                         <p>{this.props.watch.intro}</p>
-                        <img className="watch-video" src={this.props.watch.src}></img>
+                        <img className="watch-video" src={this.props.watch.src[0]}></img>
+                        <img className="watch-video" src={this.props.watch.src[1]}></img>
+                        <img className="watch-video" src={this.props.watch.src[2]}></img>
+
                        
                        
                         <a className="close" href="#" onClick={e => this.hide(e)}>Close</a>

@@ -15,7 +15,15 @@ export const moodsReducer = (state=initialState, action) => {
 	state = state || initialState;
 	if (action.type === ANGER) {
 		state = Object.assign({}, initialState, {
-            read: [`Tips:`, `-Breathe deeply, from your diaphragm. Breathing from your chest won't relax you, 
+            read: [`It’s dark because you are trying too hard. 
+                     Lightly child, lightly. Learn to do everything lightly. 
+                     Yes, feel lightly even though you’re feeling deeply. 
+                     Just lightly let things happen and lightly cope with them.
+                     Lightly, lightly – it’s the best advice ever given me. There are quicksands 
+                    all about you, sucking at your feet, 
+                     trying to suck you down into fear and self-pity and despair. 
+                     That’s why you must walk so lightly. 
+                    Lightly my darling" -Aldous Huxley`, `Tips:`, `-Breathe deeply, from your diaphragm. Breathing from your chest won't relax you, 
             so picture your breath coming up from your "gut."
             Slowly repeat a calming word or phrase, 
             such as "relax" or "take it easy." Keep repeating it to yourself while breathing deeply.`,
@@ -27,7 +35,7 @@ export const moodsReducer = (state=initialState, action) => {
                     and grin like a maniac for about 2 minutes. It’s weird but it helps.`],
             watch: {
                 intro: "Let yourself feel weightless",
-                src: "https://img.buzzfeed.com/buzzfeed-static/static/2014-04/enhanced/webdr05/22/7/anigif_enhanced-11392-1398165075-4.gif?downsize=715:*&output-format=auto&output-quality=auto"
+                src: ["https://img.buzzfeed.com/buzzfeed-static/static/2014-04/enhanced/webdr05/22/7/anigif_enhanced-11392-1398165075-4.gif?downsize=715:*&output-format=auto&output-quality=auto"]
             },
             listen: {
                 youtube: "https://www.youtube.com/embed/aiTgKYqRUXc"
@@ -38,7 +46,7 @@ export const moodsReducer = (state=initialState, action) => {
 
     else if (action.type === ANXIOUS) {
         state = Object.assign({}, initialState, {
-            read: `It’s dark because you are trying too hard. 
+            read: [`It’s dark because you are trying too hard. 
                      Lightly child, lightly. Learn to do everything lightly. 
                      Yes, feel lightly even though you’re feeling deeply. 
                      Just lightly let things happen and lightly cope with them.
@@ -46,10 +54,15 @@ export const moodsReducer = (state=initialState, action) => {
                     all about you, sucking at your feet, 
                      trying to suck you down into fear and self-pity and despair. 
                      That’s why you must walk so lightly. 
-                    Lightly my darling" -Aldous Huxley`,
+                    Lightly my darling" -Aldous Huxley`, "Tips:", 
+                    `1) Exhale completely through your mouth, making a whoosh sound.`,
+                    `2) Close your mouth and inhale quietly through your nose to a mental count of four.`,
+                    `3) Hold your breath for a count of seven.`,
+                    `4) Exhale completely through your mouth, making a whoosh sound to a count of eight.`,
+                    `5) This is one breath. Now inhale again and repeat the cycle three more times for a total of four breaths.`],
             watch: {
                 intro: "Breathe along to this. Nice and slow.",
-                 src: "http://www.duffthepsych.com/wp-content/uploads/2015/02/breathe-gif.gif"
+                 src: ["http://www.duffthepsych.com/wp-content/uploads/2015/02/breathe-gif.gif"]
             },
             listen: {
                 youtube: "https://www.youtube.com/embed/aiTgKYqRUXc"
@@ -61,13 +74,18 @@ export const moodsReducer = (state=initialState, action) => {
 
     else if (action.type === TRANQUIL) {
         state = Object.assign({}, initialState, {
-            read: `Stare up at the ceiling and count down from 60. 
+            read: [`Relaxation means releasing all concern and tension and letting the natural 
+                    order of life flow through one's being. -Donald Curtis`, 'Tips:', `Stare up at the ceiling and count down from 60. 
                     Gazing upward stimulates the parasympathetic nervous system, 
                     which lowers blood pressure and slows the pace of the breath. 
-                    Slow, deliberate counting will also help rid your mind of distractions.`,
+                    Slow, deliberate counting will also help rid your mind of distractions.`, `1) Exhale completely through your mouth, making a whoosh sound.`,
+                    `2) Close your mouth and inhale quietly through your nose to a mental count of four.`,
+                    `3) Hold your breath for a count of seven.`,
+                    `4) Exhale completely through your mouth, making a whoosh sound to a count of eight.`,
+                    `5) This is one breath. Now inhale again and repeat the cycle three more times for a total of four breaths.`],
             watch: {
                 intro: "Let yourself feel weightless",
-                src: "https://img.buzzfeed.com/buzzfeed-static/static/2014-04/enhanced/webdr05/22/7/anigif_enhanced-11392-1398165075-4.gif?downsize=715:*&output-format=auto&output-quality=auto"
+                src: ["https://img.buzzfeed.com/buzzfeed-static/static/2014-04/enhanced/webdr05/22/7/anigif_enhanced-11392-1398165075-4.gif?downsize=715:*&output-format=auto&output-quality=auto"]
             },
             listen: {
                 spotify: "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX3PIPIT6lEg5"
@@ -78,11 +96,17 @@ export const moodsReducer = (state=initialState, action) => {
 
      else if (action.type === BLUE) {
         state = Object.assign({}, initialState, {
-            read: `Relaxation means releasing all concern and tension and letting the natural 
-                    order of life flow through one's being. -Donald Curtis`,
+            read: [`Relaxation means releasing all concern and tension and letting the natural 
+                    order of life flow through one's being. -Donald Curtis`, "Tips:",
+                    `Meditation is a great practice for controlling your moods and helping you relax your mind. Over-thinking 
+                    can cause depression, anxiety and panic attacks! 
+                    Relieve yourself of every bad thought that is consuming your brain. Just let it all go, relax and 
+                    connect with your own being.`, `Take a minute to think about everything you're grateful for. Its easy to be 
+                    consumed by the things that make us sad, but taking time to focus on the things that make us happy will help us reach
+                    a much better mood`, ],
             watch: {
                 
-                src: "https://media1.popsugar-assets.com/files/thumbor/f3zItydIj0OlBxJWY2dto40vcis/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/01/06/783/n/1922441/c99e163a6f06d5a9_giphy/i/Zach-Galifianakis-dancing-pug.gif"
+                src: ["https://media1.popsugar-assets.com/files/thumbor/f3zItydIj0OlBxJWY2dto40vcis/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/01/06/783/n/1922441/c99e163a6f06d5a9_giphy/i/Zach-Galifianakis-dancing-pug.gif"]
             },
             listen: {
                 spotify: "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX3PIPIT6lEg5" 
@@ -93,10 +117,12 @@ export const moodsReducer = (state=initialState, action) => {
 
       else if (action.type === ROMANTIC) {
         state = Object.assign({}, initialState, {
-            read: `May the ocean of your soul be reminiscent of the moon, one beautiful receding tide after another
-                   Endlessly returning inward and extending. Eternally dancing between wonder and mystery`,
+            read: [`May the ocean of your soul be reminiscent of the moon, one beautiful receding tide after another
+                   Endlessly returning inward and extending. Eternally dancing between wonder and mystery`, `Light some candles. Curl up
+                   with your favorite book. Treat yourself. Sexy is a state of mind, so do whatever it is that gets your mind
+                   right`],
             watch: {
-                src: "https://media1.popsugar-assets.com/files/thumbor/f3zItydIj0OlBxJWY2dto40vcis/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/01/06/783/n/1922441/c99e163a6f06d5a9_giphy/i/Zach-Galifianakis-dancing-pug.gif"
+                src: ["https://media1.popsugar-assets.com/files/thumbor/f3zItydIj0OlBxJWY2dto40vcis/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/01/06/783/n/1922441/c99e163a6f06d5a9_giphy/i/Zach-Galifianakis-dancing-pug.gif"]
             },
             listen: {
                 spotify: "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX3PIPIT6lEg5"},
@@ -106,10 +132,14 @@ export const moodsReducer = (state=initialState, action) => {
 
        else if (action.type === ENERGETIC) {
         state = Object.assign({}, initialState, {
-            read: `May the ocean of your soul be reminiscent of the moon, one beautiful receding tide after another
-                   Endlessly returning inward and extending. Eternally dancing between wonder and mystery`,
+            read: [`"Engery cannot be created or destroyed, it can only be changed from one form to another." - Albert Enstein`, `Tips to change low energy to high energy:`, `See Red! Seeing the fiery color makes your muscles move faster and work harder, 
+            giving you a burst of energy when you need it most, according to University of Rochester research.`, 
+            `Have a laugh! A good laugh raises your blood pressure and boosts heart rate, too, which can pump you 
+            up when you’re feeling sluggish, says Robert R. Provine, PhD, author of Laughter.`, `Get moving! Stretching is 
+            a great way to wake up the body and mind. See the 'Watch' transitioner for demonstrations on some of the most effective
+            energy boosting exercises`],
             watch: {
-                intro: "Stretching is a rejuvinating activity that can increase you renergy levels. Follow this simple stretch which releases muscle tension to give your mood the energy boost it needs.",
+                intro: "Stretching is a rejuvinating activity that can increase your energy levels. Follow this simple stretch which releases muscle tension to give your mood an energy boost.",
                 src: 
                      ["http://www.prevention.com/sites/prevention.com/files/styles/article_main_image_2200px/public/hippie-chris-philpot.gif?itok=2HHBC-0B",
                      "http://www.prevention.com/sites/prevention.com/files/styles/article_main_image_2200px/public/kneedrop-chris-philpot.gif?itok=feghiBCd",

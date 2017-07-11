@@ -33,9 +33,9 @@ export class WatchModal extends Component {
         return (
             <div className="overlay" id="modal">
                 <div className="content">
-                    <h3>Wise words:</h3>
-                    
-                        <img src={this.watch}></img>
+                    <h3>Find your happy place:</h3>
+                        <p>{this.props.watch.intro}</p>
+                        <img className="watch-video" src={this.props.watch.src}></img>
                        
                        
                         <a className="close" href="#" onClick={e => this.hide(e)}>Close</a>
@@ -49,9 +49,9 @@ export class WatchModal extends Component {
 const mapStatetoProps = state => ({
     
   
-    watch: state.watch,
+    watch: state.moodsReducer.watch,
 
-    showInfoModal: state.showInfoModal
+    
 });
 
 export default connect(mapStatetoProps)(WatchModal);

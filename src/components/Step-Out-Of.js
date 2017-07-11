@@ -26,7 +26,7 @@ class StepOutOf extends Component {
   render() {
     return (
         <container className="step-out">
-            <a href="" onClick={e => this.anger(e)}><Link to="/mood/anger">
+            <a href="" onClick={e => this.anger(e)}><Link to="/mood/Anger">
             <div id="hover" className="anger">
                 <img className="anger-img" src="../images/anger-icon.png"></img>
                 <h1 className="mood-title">Anger</h1>
@@ -34,7 +34,7 @@ class StepOutOf extends Component {
             </div>
             </Link>
             </a>
-            <a href="" onClick={e => this.anxious(e)}><Link to="/mood/anxiety">
+            <a href="" onClick={e => this.anxious(e)}><Link to="/mood/Anxiety">
             <div id="hover" className="anxiety">
                 <img className="anxiety-img" src="../images/anxiety-icon.png"></img>
                 <h1 className="mood-title">Anxiety</h1>
@@ -42,7 +42,7 @@ class StepOutOf extends Component {
             </div>
             </Link>
             </a>
-            <a href="" onClick={e => this.blue(e)}><Link to="/mood/blue">
+            <a href="" onClick={e => this.blue(e)}><Link to="/mood/Blue">
             <div id="hover" className="blue">
                 <img className="blue-img" src="../images/blue-icon.png"></img>
                 <h1 className="mood-title">Blue</h1>

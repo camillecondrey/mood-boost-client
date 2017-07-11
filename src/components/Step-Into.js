@@ -23,7 +23,7 @@ export class StepInto extends Component {
   render() {
     return (
         <container className="stepin">
-            <a href="" onClick={e => this.tranquil(e)}><Link to="/mood/tranguil">
+            <a href="" onClick={e => this.tranquil(e)}><Link to="/mood/Tranquil">
             <div id="hover" className="tranquil">
                 <img className="tranquil-img" src="../images/tranquil.png"></img>
                 <h1 className="mood-title">Tranquil</h1>
@@ -31,7 +31,7 @@ export class StepInto extends Component {
             </div>
             </Link>
             </a>
-            <a href="" onClick={e => this.romantic(e)}><Link to="/mood/romantic">
+            <a href="" onClick={e => this.romantic(e)}><Link to="/mood/Romantic">
             <div id="hover" className="romantic">
                 <img className="romance-img" src="../images/romance.png"></img>
                 <h1 className="mood-title">Romantic</h1>
@@ -39,7 +39,7 @@ export class StepInto extends Component {
             </div>
             </Link>
             </a>
-            <a href="" onClick={e => this.energetic(e)}><Link to="/mood/energized">
+            <a href="" onClick={e => this.energetic(e)}><Link to="/mood/Energized">
             <div id="hover" className="energized">
                 <img className="energy-img" src="../images/energetic.png"></img>
                 <h1 className="mood-title">Energized</h1>

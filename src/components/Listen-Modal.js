@@ -10,13 +10,10 @@ export class ListenModal extends Component {
     constructor(props) {
 
         super(props) 
-        this.read = this.props.read
-    
-        this.watch = this.props.watch.src
+       
     
         this.listen = this.props.listen
-        this.nourish = this.props.nourish
-        this.intro = this.props.watch.intro
+     
         
     }
 
@@ -28,12 +25,19 @@ export class ListenModal extends Component {
     render() {
        
         let listen 
-        if (this.listen.youtube) {
-            listen = <iframe src={this.listen.youtube} width="500" height="269" frameBorder="0" allowTransparency="true"></iframe>
-        }
-        else {
-            listen = <iframe src={this.listen.spotify} width="300" height="380" frameBorder="0" allowTransparency="true"></iframe>
+        // if (this.listen.youtube) {
+        //     listen = <iframe src={this.listen.youtube} width="500" height="269" frameBorder="0" allowTransparency="true"></iframe>
+        // }
+        // else {
+        //     listen = <iframe src={this.listen.spotify} width="300" height="380" frameBorder="0" allowTransparency="true"></iframe>
+        // }
 
+        if (this.listen.youtube) {
+            listen = this.listen.youtube
+        }
+
+        else {
+            listen = this.listen.spotify
         }
 
         return (
@@ -41,7 +45,8 @@ export class ListenModal extends Component {
                 <div className="content">
                     <h3>Tune in, drop out:</h3>
                     <div>
-                        <p>{this.listen}</p>
+                        {/*<p>{this.props.listen}</p>*/}
+                        <iframe src={listen} width="300" height="300" frameBorder="0" allowTransparency="true"></iframe>
                        
                         
                         <a className="close" href="#" onClick={e => this.hide(e)}>Close</a>
@@ -54,11 +59,9 @@ export class ListenModal extends Component {
 
 const mapStatetoProps = state => ({
     
-    watch: state.watch,
-    read: state.read,
-    listen: state.listen,
-    nourish: state.nourish,
-    showInfoModal: state.showInfoModal
+
+    listen: state.moodsReducer.listen
+
 });
 
 export default connect(mapStatetoProps)(ListenModal);

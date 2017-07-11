@@ -68,7 +68,7 @@ toggleListenModal(event) {
 <div className="tran-section">
         
     <section className="first-pair">
-        <a href="" onClick={e => this.toggleReadModal(e)}>
+        <a href="" onClick={this.toggleReadModal.bind(this)}>
            
            
             <div id="hover" className="read">
@@ -82,13 +82,13 @@ toggleListenModal(event) {
             <div id="hover" className="watch">
                 <img className="watch-img" src="../images/watch.png"></img>
                 <h1 className="tran-title">Watch</h1>
-                <p className="tran-sub-head">Wise words</p>
+                <p className="tran-sub-head">Find your happy place</p>
             </div>
         </a>
         </section>
         <section className="second-pair">
 
-         <a href="" onClick={e => this.toggleListenModal(e)}>
+         <a href="" onClick={this.toggleListenModal.bind(this)}>
             <div id="hover" className="listen">
                 <img className="listen-img" src="../images/listen.png"></img>
                 <h1 className="tran-title">Listen</h1>
@@ -120,7 +120,7 @@ toggleListenModal(event) {
    
 // });
 
-export default connect(Transitioners);
+export default connect()(Transitioners);
 
 
 

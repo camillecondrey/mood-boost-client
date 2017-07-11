@@ -55,7 +55,7 @@ export class About extends Component {
                     <p className="about-p">Record what is causing your moods to help identify a pattern</p>
                 </div>
                 <div className="image-div">
-                    <p>[placeholder for screenshot of mood tracker]</p>
+                    <img className="screenshot3" src="../images/tracker.png"></img>
                 </div>
             </div> 
             {/*<BoostButton />*/}

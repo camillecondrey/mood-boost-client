@@ -9,13 +9,9 @@ export class NourishModal extends Component {
     constructor(props) {
 
         super(props) 
-        this.read = this.props.read
-    
-        this.watch = this.props.watch.src
-    
-        this.listen = this.props.listen
+     
         this.nourish = this.props.nourish
-        this.intro = this.props.watch.intro
+  
         
     }
 
@@ -31,11 +27,26 @@ export class NourishModal extends Component {
             <div className="overlay" id="modal">
                 <div className="content">
                     <h3>Flavors that Fix:</h3>
-                    <div>
-                        <p>{this.nourish}</p>
+                    <div className="nourish-div">
+                        <p className="nourish-intro">{this.props.nourish[0]}</p>
+                        <ul className="food-list">
+                            <div className="columns">
+                                <div className="column1">
+                                    <li>{this.props.nourish[1]}</li>
+                                    <li>{this.props.nourish[2]}</li>
+                                    <li>{this.props.nourish[3]}</li>
+                                </div>
+                                <div className="column2">
+                                    <li>{this.props.nourish[4]}</li>
+                                    <li>{this.props.nourish[5]}</li>
+                                    <li>{this.props.nourish[6]}</li>
+                                </div>
+                            </div>
+                        </ul>
+
                        
                         
-                        <a className="close" href="#" onClick={e => this.hide(e)}>Close</a>
+                        <a className="close" href="#" onClick={this.hide.bind(this)}>Close</a>
                     </div>
                 </div>
             </div>
@@ -45,11 +56,8 @@ export class NourishModal extends Component {
 
 const mapStatetoProps = state => ({
     
-    watch: state.watch,
-    read: state.read,
-    listen: state.listen,
-    nourish: state.nourish,
-    showInfoModal: state.showInfoModal
+    nourish: state.moodsReducer.nourish
+  
 });
 
 export default connect(mapStatetoProps)(NourishModal);

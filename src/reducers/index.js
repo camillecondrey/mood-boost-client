@@ -15,16 +15,16 @@ export const moodsReducer = (state=initialState, action) => {
 	state = state || initialState;
 	if (action.type === ANGER) {
 		state = Object.assign({}, initialState, {
-            read: `Breathe deeply, from your diaphragm. Breathing from your chest won't relax you, 
+            read: [`Tips:`, `-Breathe deeply, from your diaphragm. Breathing from your chest won't relax you, 
             so picture your breath coming up from your "gut."
             Slowly repeat a calming word or phrase, 
-            such as "relax" or "take it easy." Keep repeating it to yourself while breathing deeply.
+            such as "relax" or "take it easy." Keep repeating it to yourself while breathing deeply.`,
             
-                    Go out and do something physical. This might be to walk, or 
+                    `-Go out and do something physical. This might be to walk, or 
                     running or just try jumping up and down on the spot. It helps disperse the chemicals    
-                    building up in your muscles.
-                    Our mood influences our expression and vice versa: Lock yourself into a bathroom stall 
-                    and grin like a maniac for about 2 minutes. It’s weird but it helps.`,
+                    building up in your muscles.`,
+                    `-Our mood influences our expression and vice versa: Lock yourself into a bathroom stall 
+                    and grin like a maniac for about 2 minutes. It’s weird but it helps.`],
             watch: {
                 intro: "Let yourself feel weightless",
                 src: "https://img.buzzfeed.com/buzzfeed-static/static/2014-04/enhanced/webdr05/22/7/anigif_enhanced-11392-1398165075-4.gif?downsize=715:*&output-format=auto&output-quality=auto"
@@ -32,7 +32,7 @@ export const moodsReducer = (state=initialState, action) => {
             listen: {
                 youtube: "https://www.youtube.com/embed/aiTgKYqRUXc"
             },
-            nourish: ["oysters", "walnuts", "peanut butter", "bananas", "potatoes", "grilled cheese"]
+            nourish: ["Curb your anger with these foods that are known for lowering blood pressure and calming nerves", "oysters", "walnuts", "peanut butter", "bananas", "potatoes", "grilled cheese"]
         });	
 	}
 
@@ -54,15 +54,17 @@ export const moodsReducer = (state=initialState, action) => {
             listen: {
                 youtube: "https://www.youtube.com/embed/aiTgKYqRUXc"
             },
-            nourish: ["asparagus", "avocado", "blueberries", "milk", "oranges", "salmon"]
+            nourish: ["These super foods are great at reducing stress and anxiety", "asparagus", "avocado", "blueberries", "milk", "oranges", "salmon"]
 
         })
     } 
 
     else if (action.type === TRANQUIL) {
         state = Object.assign({}, initialState, {
-            read: `<p>Relaxation means releasing all concern and tension and letting the natural 
-                    order of life flow through one's being. -Donald Curtis</p>`,
+            read: `Stare up at the ceiling and count down from 60. 
+                    Gazing upward stimulates the parasympathetic nervous system, 
+                    which lowers blood pressure and slows the pace of the breath. 
+                    Slow, deliberate counting will also help rid your mind of distractions.`,
             watch: {
                 intro: "Let yourself feel weightless",
                 src: "https://img.buzzfeed.com/buzzfeed-static/static/2014-04/enhanced/webdr05/22/7/anigif_enhanced-11392-1398165075-4.gif?downsize=715:*&output-format=auto&output-quality=auto"
@@ -70,14 +72,14 @@ export const moodsReducer = (state=initialState, action) => {
             listen: {
                 spotify: "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX3PIPIT6lEg5"
             },
-            nourish: ["walnuts", "kava", "honey", "bananas", "oatmeal", "dark chocolate"]
+            nourish: ["Take the edge off and mellow out with these superfoods that are known for calming the mind and body", "walnuts", "kava", "honey", "bananas", "oatmeal", "dark chocolate"]
         })
     }   
 
      else if (action.type === BLUE) {
         state = Object.assign({}, initialState, {
-            read: `<p>Relaxation means releasing all concern and tension and letting the natural 
-                    order of life flow through one's being. -Donald Curtis</p>`,
+            read: `Relaxation means releasing all concern and tension and letting the natural 
+                    order of life flow through one's being. -Donald Curtis`,
             watch: {
                 
                 src: "https://media1.popsugar-assets.com/files/thumbor/f3zItydIj0OlBxJWY2dto40vcis/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/01/06/783/n/1922441/c99e163a6f06d5a9_giphy/i/Zach-Galifianakis-dancing-pug.gif"
@@ -85,7 +87,7 @@ export const moodsReducer = (state=initialState, action) => {
             listen: {
                 spotify: "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX3PIPIT6lEg5" 
             },
-            nourish: ["oranges", "papaya", "fish oil", "saffron", "chocolate", "popcorn"]
+            nourish: ["Don't eat your emotions, FEED your emotions! These seratonin boosting foods are sure to put a smile on your face", "oranges", "papaya", "fish oil", "saffron", "chocolate", "popcorn"]
         })
     } 
 
@@ -98,7 +100,7 @@ export const moodsReducer = (state=initialState, action) => {
             },
             listen: {
                 spotify: "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX3PIPIT6lEg5"},
-            nourish: ["pomegranates", "oysters", "figs", "dark chocolate", "red wine", "coconut milk"]
+            nourish: ["These foods are known for boosting the libido. Getting in the mood is as easy as a stop at the grocery store", "pomegranates", "oysters", "red wine", "dark chocolate", "figs", "coconut milk"]
         })
     } 
 
@@ -114,7 +116,8 @@ export const moodsReducer = (state=initialState, action) => {
                      "http://www.prevention.com/sites/prevention.com/files/styles/article_main_image_2200px/public/yo-yo-chris-philpot.gif?itok=uuxaeIKP"]
             },
             listen: "",
-            nourish: ["brown rice", "sweet potato", "honey", "apples", "spinach", "eggs"]
+            nourish: ["To give your mood a boost of energy, put down the coffee and try these foods that naturally increase energy levels:",
+            "brown rice", "sweet potato", "honey", "apples", "spinach", "eggs"]
         })
     } 
 
@@ -129,28 +132,28 @@ export const moodsReducer = (state=initialState, action) => {
 
     else if (action.type === TOGGLE_READ_MODAL) {
         state = Object.assign({}, state, {
-            showInfoModal: !state.showInfoModal
+            showReadModal: !state.showReadModal
         });
         return state;
     }
 
     else if (action.type === TOGGLE_WATCH_MODAL) {
         state = Object.assign({}, state, {
-            showInfoModal: !state.showInfoModal
+            showWatchModal: !state.showWatchModal
         });
         return state;
     }
 
      else if (action.type === TOGGLE_LISTEN_MODAL) {
         state = Object.assign({}, state, {
-            showInfoModal: !state.showInfoModal
+            showListenModal: !state.showListenModal
         });
         return state;
     }
 
      else if (action.type === TOGGLE_NOURISH_MODAL) {
         state = Object.assign({}, state, {
-            showInfoModal: !state.showInfoModal
+            showNourishModal: !state.showNourishModal
         });
         return state;
     }

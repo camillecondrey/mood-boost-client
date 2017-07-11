@@ -8,6 +8,7 @@
 	left: 0;
 	margin: 0;
 	z-index: 1000;
+ 
 }
 
 .read-text {
@@ -37,7 +38,7 @@
 	font-weight: 300;
 	opacity: 0.8;
 	background: linear-gradient(to right, #5B86E5, #36D1DC);
-	border-radius: 3px 3px 0 0;
+	border-radius: 50px;
 }
 
 .content > div {
@@ -84,8 +85,51 @@
     float: none;
     margin-bottom: 15px;
     margin-top: 15px;
+    display: block;
+    width: 100px;
 }
 
 img {
     margin: 10px;
+}
+
+.nourish-div {
+    text-align: center;
+}
+
+iframe {
+    margin-bottom: 30px;
+}
+
+/*.food-list > li{
+    display: inline-block;
+    
+}*/
+
+.watch-video {
+    width: 518px;
+    height: auto;
+}
+
+.nourish-intro {
+    text-align: center;
+}
+
+li {
+    font-size: 22px;
+}
+
+.columns {
+    display: inline-block;
+    margin-left: 55px;
+    margin-right: auto;
+}
+
+.column1 {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.column2 {
+    display: inline-block;
 }

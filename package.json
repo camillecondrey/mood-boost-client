@@ -1,5 +1,6 @@
 {
   "name": "mood-boost-client",
+  "homepage": "http://systems-analyst-eagle-34641.netlify.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -47,7 +47,7 @@ export class ListenModal extends Component {
                     <div>
                      
                         
-                        <iframe src={listen} width="300" height="300" frameBorder="0" allowTransparency="true"></iframe>
+                        <iframe title="playlist" src={listen} width="300" height="300" frameBorder="0" allowTransparency="true"></iframe>
                        
                         
                         <a className="close" href="" onClick={e => this.hide(e)}>Close</a>

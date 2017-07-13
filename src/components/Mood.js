@@ -1,9 +1,10 @@
+// eslint-disable-next-line
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 
 import NavMood from './Nav-Mood';
 import './Mood.css'
-import MoodTitle from './Mood-Title';
+
 import {anger, anxious, blue, romantic, energetic, tranquil} from '../actions/index';
 import Transitioners from './Transitioners';
 import ReadModal from './Read-Modal';
@@ -17,7 +18,7 @@ export class Mood extends React.Component {
         super(props) 
         this.mood = this.props.mood
         console.log(this.props.match)
-
+// eslint-disable-next-line
         switch(this.props.match.params.moodId) {
             case 'anger': 
                 this.props.dispatch(anger());

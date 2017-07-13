@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './Modal.css'
-import {toggleNourishModal, read, watch, listen, nourish} from '../actions/index';
-import $ from 'jquery';
+import {toggleNourishModal} from '../actions/index';
+
 
 
 export class NourishModal extends Component {
@@ -32,21 +32,21 @@ export class NourishModal extends Component {
                         <ul className="food-list">
                             <div className="columns">
                                 <div className="column1">
-                                    <li>{this.props.nourish[1]}</li>
-                                    <li>{this.props.nourish[2]}</li>
-                                    <li>{this.props.nourish[3]}</li>
+                                    <li><b>{this.props.nourish[1]}</b></li>
+                                    <li><b>{this.props.nourish[2]}</b></li>
+                                    <li><b>{this.props.nourish[3]}</b></li>
                                 </div>
                                 <div className="column2">
-                                    <li>{this.props.nourish[4]}</li>
-                                    <li>{this.props.nourish[5]}</li>
-                                    <li>{this.props.nourish[6]}</li>
+                                    <li><b>{this.props.nourish[4]}</b></li>
+                                    <li><b>{this.props.nourish[5]}</b></li>
+                                    <li><b>{this.props.nourish[6]}</b></li>
                                 </div>
                             </div>
                         </ul>
 
                        
                         
-                        <a className="close" href="#" onClick={this.hide.bind(this)}>Close</a>
+                        <a className="close" href="" onClick={this.hide.bind(this)}>Close</a>
                     </div>
                 </div>
             </div>

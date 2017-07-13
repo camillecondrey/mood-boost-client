@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// eslint-disable-next-line
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import './Step-Out-Of.css'
@@ -28,7 +29,7 @@ class StepOutOf extends Component {
         <container className="step-out">
             <a href="" onClick={e => this.anger(e)}><Link to="/mood/Anger">
             <div id="hover" className="anger">
-                <img className="anger-img" src="../images/anger-icon.png"></img>
+                <img alt="fire" className="anger-img" src="../images/anger-icon.png"></img>
                 <h1 className="mood-title">Anger</h1>
                 <p className="step-p">Step out</p>
             </div>
@@ -36,7 +37,7 @@ class StepOutOf extends Component {
             </a>
             <a href="" onClick={e => this.anxious(e)}><Link to="/mood/Anxiety">
             <div id="hover" className="anxiety">
-                <img className="anxiety-img" src="../images/anxiety-icon.png"></img>
+                <img alt="cloud" className="anxiety-img" src="../images/anxiety-icon.png"></img>
                 <h1 className="mood-title">Anxiety</h1>
                 <p className="step-p">Step out</p>
             </div>
@@ -44,7 +45,7 @@ class StepOutOf extends Component {
             </a>
             <a href="" onClick={e => this.blue(e)}><Link to="/mood/Blue">
             <div id="hover" className="blue">
-                <img className="blue-img" src="../images/blue-icon.png"></img>
+                <img alt="tear" className="blue-img" src="../images/blue-icon.png"></img>
                 <h1 className="mood-title">Blue</h1>
                 <p className="step-p">Step out</p>
             </div>

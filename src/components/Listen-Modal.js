@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './Modal.css'
-import {toggleListenModal, read, watch, listen, nourish} from '../actions/index';
-import $ from 'jquery';
+import {toggleListenModal} from '../actions/index';
+
 
 
 
@@ -45,11 +45,12 @@ export class ListenModal extends Component {
                 <div className="content">
                     <h3>Tune in, drop out:</h3>
                     <div>
-                        {/*<p>{this.props.listen}</p>*/}
+                     
+                        
                         <iframe src={listen} width="300" height="300" frameBorder="0" allowTransparency="true"></iframe>
                        
                         
-                        <a className="close" href="#" onClick={e => this.hide(e)}>Close</a>
+                        <a className="close" href="" onClick={e => this.hide(e)}>Close</a>
                     </div>
                 </div>
             </div>

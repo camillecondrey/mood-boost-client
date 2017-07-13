@@ -1,7 +1,7 @@
-import {CREATE_ACCOUNT, ENERGETIC, ANGER, ANXIOUS, TRANQUIL, 
-    TOGGLE_TRANSITION_MODAL, BLUE, ROMANTIC, RECORD_MOOD, LOG_IN, FETCH_MOOD, TOGGLE_READ_MODAL, TOGGLE_WATCH_MODAL, TOGGLE_LISTEN_MODAL,
+import {ENERGETIC, ANGER, ANXIOUS, TRANQUIL, 
+    TOGGLE_TRANSITION_MODAL, BLUE, ROMANTIC, TOGGLE_READ_MODAL, TOGGLE_WATCH_MODAL, TOGGLE_LISTEN_MODAL,
 TOGGLE_NOURISH_MODAL} from '../actions/index';
-import {handle} from 'redux-pack';
+// import {handle} from 'redux-pack';
 
 const initialState = {
     read: "",
@@ -125,11 +125,10 @@ export const moodsReducer = (state=initialState, action) => {
                 src: ["https://media1.popsugar-assets.com/files/thumbor/f3zItydIj0OlBxJWY2dto40vcis/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/01/06/783/n/1922441/c99e163a6f06d5a9_giphy/i/Zach-Galifianakis-dancing-pug.gif"]
             },
             listen: {
-                spotify: "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX3PIPIT6lEg5"},
+                spotify: "https://open.spotify.com/embed/user/22urzmjuruiey3c6wumr2pg3y/playlist/2ZKKnn5kMAJv03VOUwGdGT"},
             nourish: ["These foods are known for boosting the libido. Getting in the mood is as easy as a stop at the grocery store", "pomegranates", "oysters", "red wine", "dark chocolate", "figs", "coconut milk"]
         })
     } 
-
        else if (action.type === ENERGETIC) {
         state = Object.assign({}, initialState, {
             read: [`"Engery cannot be created or destroyed, it can only be changed from one form to another." - Albert Enstein`, `Tips to change low energy to high energy:`, `See Red! Seeing the fiery color makes your muscles move faster and work harder, 

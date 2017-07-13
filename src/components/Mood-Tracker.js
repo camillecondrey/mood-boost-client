@@ -4,6 +4,7 @@ import MoodEntry from './Mood-Entry';
 import {connect} from 'react-redux';
 import {fetchMood} from '../actions/index';
 import './Mood-Tracker.css';
+// eslint-disable-next-line
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 

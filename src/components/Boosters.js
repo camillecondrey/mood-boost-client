@@ -3,22 +3,18 @@ import StepInto from './Step-Into';
 import StepOutOf from './Step-Out-Of';
 
 import {connect} from 'react-redux';
-import NavBoosters from './Nav-Boosters';
+
 import './Boosters.css'
+// eslint-disable-next-line
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+// eslint-disable-next-line
 import {logOut, fetchMood} from '../actions/index';
 
 
 
 
 export class Boosters extends Component {
-    constructor(props) {
-        super(props);
-        // this.state = {
-        //     showStepOutOf: true
-        // };
-       
-    }
+  
 
     handleLogOut(event) {
         event.preventDefault();

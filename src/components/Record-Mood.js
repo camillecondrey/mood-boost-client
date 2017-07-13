@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import {recordMood} from '../actions/index';
 import {connect} from 'react-redux';
-import NavRecord from './Nav-Record';
+// eslint-disable-next-line
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './Record-Mood.css';
 
 
 export class RecordMood extends Component {
+    // eslint-disable-next-line
      constructor(props) {
 
         super(props) 
@@ -52,7 +53,7 @@ handleMoodAdd(e) {
             <h2 className="record-heading" >Record Mood</h2>
             <form id="record-mood" onSubmit={this.handleMoodAdd.bind(this)}>
                 <div className="form-section">
-                    <label for="date">When were you in this mood?</label>
+                    <label>When were you in this mood?</label>
                     <input type="number" name="date-month" className="date-month" placeholder="01" min="1" max="12" required=""/>  .
                     <input type="number" name="date-day" className="date-day" placeholder="01" min="1" max="31" required=""/>  .
                     <input type="number" name="date-year" className="date-year" min="2016" max="2017" placeholder="2017"/>
@@ -61,16 +62,16 @@ handleMoodAdd(e) {
                     <input className="date-year"/>*/}
                 </div>
                 <div className="form-section">
-                    <label for="mood-title">What type of mood was it?</label>
+                    <label>What type of mood was it?</label>
                     <input type="text" className="description" name="mood-title" placeholder="Example: Angry" required/>
                 </div>
                 <div className="form-section">
-                    <label for="mood-length">How long did this mood last?</label>
+                    <label>How long did this mood last?</label>
                     <input type="text" className="duration" name="mood-length" placeholder="Example: 2 hours" required/>
                 </div>
                 
                 <div className="form-section">
-                    <label for="cause">What triggered this mood?</label>
+                    <label>What triggered this mood?</label>
                     <input type="text" className="cause" name="cause" placeholder="Example: I got a speeding ticket" required/>
                 </div>
                 

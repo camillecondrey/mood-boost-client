@@ -3,7 +3,7 @@ import './Create-Account.css';
 import $ from 'jquery';
 import {connect} from 'react-redux';
 import {createAccount} from '../actions/index';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+
 
 
 export class CreateAccount extends React.Component {

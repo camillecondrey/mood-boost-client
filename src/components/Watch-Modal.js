@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './Modal.css'
-import {toggleWatchModal, read, watch, listen, nourish} from '../actions/index';
-import $ from 'jquery';
+import {toggleWatchModal} from '../actions/index';
+
 
 
 export class WatchModal extends Component {
@@ -35,13 +35,13 @@ export class WatchModal extends Component {
                 <div className="content">
                     <h3>Find your happy place:</h3>
                         <p>{this.props.watch.intro}</p>
-                        <img className="watch-video" src={this.props.watch.src[0]}></img>
-                        <img className="watch-video" src={this.props.watch.src[1]}></img>
-                        <img className="watch-video" src={this.props.watch.src[2]}></img>
+                        <img alt="" className="watch-video" src={this.props.watch.src[0]}></img>
+                        <img alt="" className="watch-video" src={this.props.watch.src[1]}></img>
+                        <img alt="" className="watch-video" src={this.props.watch.src[2]}></img>
 
                        
                        
-                        <a className="close" href="#" onClick={e => this.hide(e)}>Close</a>
+                        <a className="close" href="" onClick={e => this.hide(e)}>Close</a>
                     
                 </div>
             </div>

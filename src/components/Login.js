@@ -3,10 +3,11 @@ import './Login.css';
 import $ from 'jquery';
 import {connect} from 'react-redux';
 import {logIn} from '../actions/index';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+
 
 
 export class LogIn extends React.Component {
+    // eslint-disable-next-line
  constructor(props) {
 
         super(props) 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import BoostButton from './BoostButton';
+
 import Nav from './Nav';
 import CreateAccount from './Create-Account';
 
@@ -35,13 +35,13 @@ export class About extends Component {
                     <p className="about-p">Mood Boost offers six moods to transition into or out of.</p>
                 </div>
                 <div className="image-div">
-                    <img className="screenshot" src="../images/moods.png"></img>
+                    <img alt="" className="screenshot" src="../images/moods.png"></img>
                 </div>
                 
             </div>
             <div className="about-section">
             <div className="image-div">
-                <img className="screenshot2" src="../images/transitioners.png"></img>
+                <img alt="" className="screenshot2" src="../images/transitioners.png"></img>
             </div>
             <div className="h3-div">
                 <h3 className="about-h32">Transition</h3>
@@ -55,7 +55,7 @@ export class About extends Component {
                     <p className="about-p">Record what is causing your moods to help identify a pattern</p>
                 </div>
                 <div className="image-div">
-                    <img className="screenshot3" src="../images/tracker.png"></img>
+                    <img alt="" className="screenshot3" src="../images/tracker.png"></img>
                 </div>
             </div> 
             {/*<BoostButton />*/}

@@ -25,8 +25,8 @@ handleMoodAdd(e) {
     }
     else {
 	    var newMood = {
-				date: ( $(".date-month").val(), $(".date-day").val(), $(".date-year").val() ),
-                // date: "",
+				date: new Date( $(".date-year").val(), $(".date-month").val()-1, $(".date-day").val() ),
+                
 				description: $('.description').val(),
 				cause: $('.cause').val(),
 				duration: $('.duration').val()

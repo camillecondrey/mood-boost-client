@@ -1,5 +1,5 @@
 import axios from 'axios';
-const url = "https://rocky-caverns-41214.herokuapp.com/"
+const url = "https://rocky-caverns-41214.herokuapp.com"
 // const url = "http://localhost:8080"
 
 export const CREATE_ACCOUNT = 'CREATE_ACCOUNT';

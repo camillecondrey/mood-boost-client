@@ -6,7 +6,7 @@ export class Footer extends Component {
   render() {
     return (
         <footer>
-          <p>Created by Camille Condrey</p>
+          <p className="created-by">Created by Camille Condrey</p>
         </footer>
     )
   }

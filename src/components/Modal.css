@@ -156,7 +156,9 @@ li {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 	  .content {
-			
 			width: 100%;
+	  }
+	  .watch-video {
+		  width: 100%;
 	  }
   }

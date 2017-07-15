@@ -32,7 +32,7 @@ export class About extends Component {
            
                 <div className="h3-div">
                     <h3 className="about-h3">Step in or step out</h3>
-                    <p className="about-p">Mood Boost offers six moods to transition into or out of.</p>
+                    <p className="about-p">Mood Boost offers a collection of tips on how to transition into three positive moods and out of three negative moods.</p>
                 </div>
                 <div className="image-div">
                     <img alt="" className="screenshot" src="../images/moods.png"></img>
@@ -58,7 +58,7 @@ export class About extends Component {
                     <img alt="" className="screenshot3" src="../images/tracker.png"></img>
                 </div>
             </div> 
-            {/*<BoostButton />*/}
+
             <CreateAccount />
         </div>
         <Footer />

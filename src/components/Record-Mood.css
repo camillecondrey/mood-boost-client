@@ -118,8 +118,12 @@ background-image: linear-gradient(to right, #c2e59c, #64b3f4);
 
 #input {
     background: transparent;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid white;
     border-radius: 0px;
+    /*font-style: italic;*/
+    color: #6C7A89;
+}
+
+#input::placeholder {
     font-style: italic;
-    color: #e7e7e7;
 }

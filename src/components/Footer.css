@@ -9,8 +9,15 @@ footer {
 
 .created-by {
   color: white;
+  font-size: 20px;
+  display: inline-block;
 }
 
 .foot {
   display: inline-block;
+}
+
+.icon {
+  margin-bottom: 0px;
+  height: 23px;
 }

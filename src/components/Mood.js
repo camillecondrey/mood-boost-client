@@ -43,8 +43,6 @@ export class Mood extends React.Component {
      
     
 render() {
-
-    
     let infoModal;
     if (this.props.showReadModal) {
         infoModal = <ReadModal />;
@@ -60,23 +58,8 @@ render() {
     }
 
 
-
-    
-
-  /*render() {
-    console.log(this.mood);
-    let transitioners; 
-    
-    if (this.props.transitioners) {
-        transitioners = this.props.transitioners.map((transitioners, index) =>
-
-        <Transitioners key={index} index={index} moodId={this.props.match.params.moodId}
-        {...transitioners} />
-    )}*/
-   
-
     return (
-        <div className="body">
+        <div id="mood-html" className="body">
             <NavMood />
             <div className="mood-heading">
                 <h1 id="mood">{this.props.match.params.moodId}</h1>

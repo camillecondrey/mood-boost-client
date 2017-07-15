@@ -25,12 +25,6 @@ export class ListenModal extends Component {
     render() {
        
         let listen 
-        // if (this.listen.youtube) {
-        //     listen = <iframe src={this.listen.youtube} width="500" height="269" frameBorder="0" allowTransparency="true"></iframe>
-        // }
-        // else {
-        //     listen = <iframe src={this.listen.spotify} width="300" height="380" frameBorder="0" allowTransparency="true"></iframe>
-        // }
 
         if (this.listen.youtube) {
             listen = this.listen.youtube

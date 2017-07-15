@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-
+import Footer from './Footer';
 import Nav from './Nav';
 import CreateAccount from './Create-Account';
 
@@ -61,6 +61,7 @@ export class About extends Component {
             {/*<BoostButton />*/}
             <CreateAccount />
         </div>
+        <Footer />
         </container>
  
     );

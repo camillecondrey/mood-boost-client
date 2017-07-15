@@ -19,6 +19,15 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-bottom: 50px;
+    }
+
+    .read {
+        margin-bottom: 50px;
+    }
+
+    .listen {
+        margin-bottom: 50px;
     }
   }
 

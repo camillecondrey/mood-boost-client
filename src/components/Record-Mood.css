@@ -85,6 +85,9 @@ background-image: linear-gradient(to right, #c2e59c, #64b3f4);
       .record-heading {
           margin-top: 80px;
       }
+      #record-mood {
+          margin-left: 50px;
+      }
   }
 
 .record-section {

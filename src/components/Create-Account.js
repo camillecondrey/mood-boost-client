@@ -8,20 +8,6 @@ import {createAccount} from '../actions/index';
 
 export class CreateAccount extends React.Component {
 
-
-// signUp (username, password) {
-// 	console.log('creating user account');
-// 	$.ajax({ 
-// 		url: '/users', 
-// 		type: 'POST', 
-// 		data: JSON.stringify({username, password}), 
-// 		contentType: 'application/json', success: function(got) { 
-// 			localStorage.headers = "Basic "+ btoa(username+ ":" + password)
-// 			window.location = '/boosters/id=';
-// 		} 
-// 	});
-// }
-
     handleNewUser (e) {
         e.preventDefault();
         if (!$('#username').val()){

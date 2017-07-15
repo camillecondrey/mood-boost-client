@@ -5,7 +5,9 @@ import './Footer.css';
 export class Footer extends Component {
   render() {
     return (
-        <footer></footer>
+        <footer>
+          <p>Created by Camille Condrey</p>
+        </footer>
     )
   }
 }

@@ -79,14 +79,16 @@ export const recordMood = (newMood) => ({
     })
 })
 
+
+
 export const FETCH_MOOD = 'FETCH_MOOD';
 export const fetchMood = () => ({
     type: FETCH_MOOD,
     promise: axios(url + "/tracker", {
         method: "GET",
-        // body: JSON.stringify(newMood),
+   
         headers: {
-            // Authorization: "Basic " + btoa(username + ":" + password)
+   
             Authorization: localStorage.headers
         }
 })

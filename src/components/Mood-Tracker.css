@@ -31,9 +31,22 @@
 .tracker-body {
     background: linear-gradient(#4568DC, #B06AB3);
     height: 100%;
+     margin-bottom: 0px;
+    padding-bottom: 0px;
+
 }
 
 section {
     background: transparent;
     border: none;
+    
+}
+
+body {
+    margin: 100px;
+    padding-bottom: 100px;
+}
+
+.mood-collection {
+height: 400px;
 }

@@ -141,3 +141,12 @@ li {
 .column2 {
     display: inline-block;
 }
+
+#tips {
+	margin-top: 40px;
+    text-align: left;
+}
+
+.tips {
+	text-align: left;
+}

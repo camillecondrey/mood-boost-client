@@ -4,6 +4,8 @@ import './Mood-Entry.css'
 
 
 
+
+
 export default class MoodEntry extends Component {
     
 
@@ -16,7 +18,6 @@ export default class MoodEntry extends Component {
         return (
             <container className="moods">
                 <div className="mood">
-                    
                         <h3 className="entry-description">{this.props.mood.description}</h3>
                         <div className="top-bar">
                         <p className="entry-date"><b>Date:</b> {date.getMonth()+1}-{date.getDate()}-{date.getFullYear()}</p>

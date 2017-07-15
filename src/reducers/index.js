@@ -101,9 +101,7 @@ export const moodsReducer = (state=initialState, action) => {
                     `Meditation is a great practice for controlling your moods and helping you relax your mind. Over-thinking 
                     can cause depression, anxiety and panic attacks! 
                     Relieve yourself of every bad thought that is consuming your brain. Just let it all go, relax and 
-                    connect with your own being.`, `Take a minute to think about everything you're grateful for. Its easy to be 
-                    consumed by the things that make us sad, but taking time to focus on the things that make us happy will help us reach
-                    a much better mood`, ],
+                    connect with your own being.`, `Take a minute to think about everything you're grateful for.`, ],
             watch: {
                 
                 src: ["https://media1.popsugar-assets.com/files/thumbor/f3zItydIj0OlBxJWY2dto40vcis/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/01/06/783/n/1922441/c99e163a6f06d5a9_giphy/i/Zach-Galifianakis-dancing-pug.gif"]
@@ -131,7 +129,7 @@ export const moodsReducer = (state=initialState, action) => {
     } 
        else if (action.type === ENERGETIC) {
         state = Object.assign({}, initialState, {
-            read: [`"Engery cannot be created or destroyed, it can only be changed from one form to another." - Albert Enstein`, `Tips to change low energy to high energy:`, `See Red! Seeing the fiery color makes your muscles move faster and work harder, 
+            read: [`"Engery cannot be created or destroyed, it can only be changed from one form to another." - Albert Enstein`, `Tips:`, `See Red! Seeing the fiery color makes your muscles move faster and work harder, 
             giving you a burst of energy when you need it most, according to University of Rochester research.`, 
             `Have a laugh! A good laugh raises your blood pressure and boosts heart rate, too, which can pump you 
             up when you’re feeling sluggish, says Robert R. Provine, PhD, author of Laughter.`, `Get moving! Stretching is 

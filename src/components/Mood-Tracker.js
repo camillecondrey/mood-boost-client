@@ -35,7 +35,7 @@ export class MoodTracker extends Component {
                 The more conscious you are of your moods, the easier they become to control.</p>
             <button className="add"><Link to="/record">Add new mood</Link></button>
         </header>
-        <section>
+        <section className="mood-collection">
            {moods}
         </section>
         </div>

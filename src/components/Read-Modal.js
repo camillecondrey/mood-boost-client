@@ -23,13 +23,15 @@ export class ReadModal extends Component {
                     <h3>Wise words:</h3>
                     <div>
                         <p id="quote" className="read-text"><b>{this.props.read[0]}</b></p>
-                        <p className="read-text">{this.props.read[1]}</p>
+                        <p id="tips" className="read-text">{this.props.read[1]}</p>
+                        <div className="tips">
                         <p className="read-text">{this.props.read[2]}</p>
                         <p className="read-text">{this.props.read[3]}</p>
                         <p className="read-text">{this.props.read[4]}</p>
                         <p className="read-text">{this.props.read[5]}</p>
                         <p className="read-text">{this.props.read[6]}</p>
                        <p className="read-text">{this.props.read[7]}</p>
+                       </div>
                         
                         <a className="close" href="" onClick={this.hide.bind(this)}>Close</a>
                     </div>

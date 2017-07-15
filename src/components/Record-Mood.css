@@ -53,7 +53,7 @@ input {
     border-radius: 20px;
     background-color: white;
     border: none;
-    color: black;
+    color: #6C7A89;
     margin-bottom: 10px;
     margin-left: auto !important;
     margin-right: auto!important;
@@ -102,4 +102,12 @@ background-image: linear-gradient(to right, #c2e59c, #64b3f4);
 
 .date-month {
     width: 50px;
+}
+
+#input {
+    background: transparent;
+    border-bottom: 1px solid;
+    border-radius: 0px;
+    font-style: italic;
+    color: #e7e7e7;
 }

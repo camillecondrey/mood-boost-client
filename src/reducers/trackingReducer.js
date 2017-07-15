@@ -28,6 +28,7 @@ export function trackingReducer(state = initialState, action) {
           success: prevState => ({...prevState, mood: action.payload}),
           failure: prevState => ({...prevState, error: action.payload})
         });
+    
       default:
       return state
     }

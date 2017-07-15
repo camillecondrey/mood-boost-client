@@ -4,7 +4,7 @@
     width: 500px;
     margin-left: auto;
     margin-right: auto;
-   margin-left: 500px;
+  
     padding: 10px;
     /*text-align: left;*/
     /*padding-left: 40px;*/
@@ -77,6 +77,15 @@ background-image: linear-gradient(to right, #c2e59c, #64b3f4);
     color: white;
     font-size: 40px;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      .record-heading {
+          margin-top: 80px;
+      }
+  }
 
 .record-section {
     margin-top: 0px;

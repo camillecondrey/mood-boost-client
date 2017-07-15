@@ -25,11 +25,23 @@
     display: block;
     width: 500px;
     height: auto;
-    margin-bottom: 80px;
+    margin-bottom: 50px !important;
     margin-top: 80px;
 
     }
+    .anxiety {
+        margin-bottom: 50px;
+    }
+
+    .blue {
+        margin-bottom: 50px;
+    }
+    .anger {
+        margin-bottom: 50px;
+    }
   }
+
+  
 
 .anxiety{
    width: 220px;

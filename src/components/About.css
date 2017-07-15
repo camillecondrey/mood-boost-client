@@ -94,8 +94,13 @@ section {
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
+    * {
+      max-width: 568px;
+    }
+    
     html {
       width: 568px;
+      margin: 0;
     }
     .about-h3 {
       width: 100%;

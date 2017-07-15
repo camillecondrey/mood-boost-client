@@ -43,9 +43,9 @@ export class About extends Component {
             <div className="image-div">
                 <img alt="" className="screenshot2" src="../images/transitioners.png"></img>
             </div>
-            <div className="h3-div">
+            <div id="mobile-trans" className="h3-div">
                 <h3 className="about-h32">Transition</h3>
-                <p className="about-p">Choose from visual, audible and interactive strategies to adjust your mood</p>
+                <p id="mobile-p" className="about-p">Choose from visual, audible and interactive strategies to adjust your mood</p>
             </div>
 
             </div>

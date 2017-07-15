@@ -94,8 +94,13 @@ section {
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+      width: 320px;
+    }
+
     .h3-div {
     margin-left: auto;
+    width: 320px;
     margin-right: auto;
     display: block;
     }

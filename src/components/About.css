@@ -120,7 +120,7 @@ section {
     }
 
     .smile .frown {
-      display: hidden;
+      display: none;
     }
     
 }

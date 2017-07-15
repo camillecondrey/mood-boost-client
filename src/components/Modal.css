@@ -161,4 +161,8 @@ li {
 	  .watch-video {
 		  width: 100%;
 	  }
+
+	  iframe {
+		  width: 100%;
+	  }
   }

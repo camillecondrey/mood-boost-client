@@ -18,6 +18,19 @@ nav {
     float: left;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .back {
+      display: none;
+    }
+
+    .mood-track {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
 
 .back {

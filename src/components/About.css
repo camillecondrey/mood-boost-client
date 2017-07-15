@@ -104,6 +104,10 @@ section {
     margin-right: auto;
     display: block;
     }
+
+    .about-section {
+      display: block;
+    }
     
 }
 

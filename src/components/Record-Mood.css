@@ -4,14 +4,9 @@
     width: 500px;
     margin-left: auto;
     margin-right: auto;
-  
     padding: 10px;
-    /*text-align: left;*/
-    /*padding-left: 40px;*/
     border-radius: 4px;
-   
     background-color: transparent;
-    /*box-shadow: 0 0 20px #D3D3D3;*/
 }
 
 .form-section {
@@ -103,7 +98,6 @@ background-image: linear-gradient(to right, #c2e59c, #64b3f4);
   font-size: 15px;
   float: left;
   border: none;
-  /*color: black;*/
   border-radius: 20px;
   
 }
@@ -116,11 +110,18 @@ background-image: linear-gradient(to right, #c2e59c, #64b3f4);
     width: 50px;
 }
 
+.date-day {
+    width: 50px;
+}
+
+.date-year {
+    width: 100px;
+}
+
 #input {
     background: transparent;
     border-bottom: 1px solid white;
     border-radius: 0px;
-    /*font-style: italic;*/
     color: #6C7A89;
 }
 

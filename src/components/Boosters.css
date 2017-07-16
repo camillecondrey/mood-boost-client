@@ -47,8 +47,6 @@
 .start {
     float: right;
     margin-right: 90px;
-    /*margin-bottom: 900px;*/
-
 }
 
 .large {
@@ -65,9 +63,7 @@
     margin-right: 30px;
     width: 170px;
     font-size: 15px;
-    /*background-image: linear-gradient(to right, #de6161, #2657eb);*/
     background-color: #ECF0F1;
-    /*color: white;*/
     color: #6C7A89;
     border: none;
     border-radius: 20px;

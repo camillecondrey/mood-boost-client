@@ -45,10 +45,9 @@ handleMoodAdd(e) {
   render() {
     return (
         <container>
-            {/*<NavRecord />*/}
 
         <div className="record-body">
-        <button className="return"><Link to="/tracker">Back to tracker</Link></button>
+        <Link to="/tracker"><button className="return">Back to tracker</button></Link>
         <section className="record-section">
             <h2 className="record-heading" >Record Mood</h2>
             <form id="record-mood" onSubmit={this.handleMoodAdd.bind(this)}>
@@ -57,9 +56,7 @@ handleMoodAdd(e) {
                     <input id="input" type="number" name="date-month" className="date-month" placeholder="01" min="1" max="12" required=""/>  /
                     <input id="input" type="number" name="date-day" className="date-day" placeholder="01" min="1" max="31" required=""/>  /
                     <input id="input" type="number" name="date-year" className="date-year" min="2016" max="2017" placeholder="2017"/>
-                    {/*<input className="date-month"/>
-                    <input className="date-day"/>
-                    <input className="date-year"/>*/}
+         
                 </div>
                 <div className="form-section">
                     <label>What type of mood was it?</label>

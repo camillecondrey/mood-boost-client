@@ -9,8 +9,8 @@ export class NavMood extends Component {
     render() {
         return (
             <nav>
-                <button id="back" className="back"><Link to="/boosters">Boosters</Link></button>
-                <button className="mood-track"><Link to="/tracker">Track your moods</Link></button>
+                <Link to="/boosters"><button id="back" className="back">Boosters</button></Link>
+                <Link to="/tracker"><button className="mood-track">Track your moods</button></Link>
 
             </nav>
         )

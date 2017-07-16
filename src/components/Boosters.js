@@ -31,9 +31,8 @@ export class Boosters extends Component {
 
         return (
             <container>
-                {/*<NavBoosters />*/}
                 <button className="home-button" onClick={this.handleLogOut.bind(this)}>Log out</button>
-                <button className="track"><Link to="/tracker">Track your moods</Link></button>
+                <Link to="/tracker"><button className="track">Track your moods</button></Link>
                     <section id="wave" className="heading-section">
                    
                         <h1 className="heading">The Boosters</h1>

@@ -4,7 +4,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
-    /*padding-left: 60px;*/
     text-align: left;
     border-radius: 4px;
     box-shadow: 0 0 20px #D3D3D3;
@@ -16,7 +15,6 @@
 }
 
 .entry-description {
-    /*display: inline-block;*/
     width: 50px;
     text-align: center;
     margin-left: auto;

@@ -9,7 +9,7 @@ export class NavTracker extends Component {
     render() {
         return (
             <nav className="tracker-nav">
-                <button id="tracker-back" className="back"><Link to="/boosters">Back to Boosters</Link></button>
+                <Link to="/boosters"><button id="tracker-back" className="back">Back to Boosters</button></Link>
                 
             </nav>
         )

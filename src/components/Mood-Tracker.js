@@ -33,7 +33,7 @@ export class MoodTracker extends Component {
             <h1 className="tracker-heading">Mood Tracker</h1>
             <p className="subTrack-heading">By tracking your moods, you can identify the patterns in your life <br/>that lead you to feel positive or negative emotions.
                 The more conscious you are of your moods, the easier they become to control.</p>
-            <button className="add"><Link to="/record">Add new mood</Link></button>
+            <Link to="/record"><button className="add">Add new mood</button></Link>
         </header>
         <section className="mood-collection">
            {moods}

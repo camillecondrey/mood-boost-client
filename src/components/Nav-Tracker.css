@@ -12,13 +12,11 @@ nav {
   z-index: 10;
 }
 
-/*.add {
-    float: right;
-}*/
+
 
 .back {
     float: left;
-    /*margin-top: 5px;*/
+
     background-color: white;
     color: #7e7e7e;
     border: none;
@@ -26,6 +24,3 @@ nav {
     margin-left: 30px;
 }
 
-#tracker-back {
-  
-}

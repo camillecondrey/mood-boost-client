@@ -2,7 +2,9 @@ This application was created with React, Redux, Node.js, Express, Mongo, Javascr
 
 Mood Boost was designed to give users a collection of strategies to help adjust their mood based on three common desirable moods (Tranquil, Energetic, Romantic) and three common undesirable moods (Anger, Anxiety, Sadness).
 
-Each mood booster contains a inspiring quotes and tips in the Read modal, a helpful or condusive gid in with the Watch modal, a playlist from Spotify and Youtube in the Listen modal, and a list of foods known for enhancing a specific mood in the Nourish modal. 
+Each mood booster contains a inspiring quotes and tips in the Read modal, a helpful or condusive gif in with the Watch modal, a playlist from Spotify and Youtube in the Listen modal, and a list of foods known for enhancing a specific mood in the Nourish modal. 
+
+This application is live at: https://diver-eugene-17360.netlify.com/
 
 Technologies used:
 

@@ -82,7 +82,7 @@ section {
     }*/
     
     html {
-      width: 375px;
+      max-width: 375px;
       margin: 0;
     }
     .about-h3 {

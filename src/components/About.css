@@ -4,6 +4,7 @@
 
 body {
   text-align: center;
+  overflow-x: hidden;
 }
 
 
@@ -57,7 +58,7 @@ section {
   width: 500px;
   margin-left: 70px;
   margin-right: 100px;
-  /*margin-top: 50px;*/
+  margin-top: 50px;
   margin-bottom: 30px;
   display: inline-block;
   color: white;
@@ -74,19 +75,24 @@ section {
 }
 
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    /** {
+    * {
       max-width: 568px;
-    }*/
+    }
     
     html {
-      max-width: 375px;
+      width: 568px;
       margin: 0;
     }
+
+    .app-name {
+      width: 550px;
+      margin-right: 0px;
+    }
     .about-h3 {
-      width: 100%;
+      /*width: 100%;*/
       margin-left: 70px;
       margin-right: 0px;
     }
@@ -109,7 +115,9 @@ section {
     }
 
     .app-sub-heading {
-      width: 100%;
+      /*width: 100%;*/
+      width: 550px;
+      margin-right: 0px!important;
     }
 
     .about-section {
@@ -124,14 +132,17 @@ section {
     }
 
     .about-header  {
-      width: 100%;
+      /*width: 100%;*/
       height: auto;
       margin-left: 18px !important;
       margin-right: auto;
     }
     .app-name {
       padding-top: 100px;
-      width: 100%;
+      /*width: 100%;*/
+      width: 550px;
+      margin-right: 0px!important;
+
     }
     #mobile-trans {
       background-color: #f9f9f9;
@@ -142,7 +153,7 @@ section {
     }
     .about-h32 {
       color: #1c92d2 !important;
-      width: 200px;
+      width: 200px !important;
       margin-left: 20px;
       margin-right: 0px;
     }
@@ -166,6 +177,44 @@ section {
       display: none;
     }
     
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    html {
+      max-width: 768px;
+    }
+    .app-sub-heading {
+      width: 600px;
+    }
+    .about-h32 {
+      width: 200px !important;
+    }
+    .about-h3 {
+      width: 240px;
+      margin-top: 80px;
+    }
+
+    .about-p {
+      width: 260px;
+      margin-right: 0px;
+    }
+
+    .screenshot {
+      width: 330px;
+    }
+
+    .screenshot2 {
+      width: 300px;
+      height: 240px;
+    }
+
+    .screenshot3 {
+      width: 380px !important;
+      margin-right: 0px;
+    }
 }
 
 .about-h32 {

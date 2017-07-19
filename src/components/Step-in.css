@@ -18,12 +18,18 @@
     }
     .tranquil {
         margin-bottom: 50px;
+        margin-left: auto !important;
+        margin-right: auto!important;
     }
     .energized {
         margin-bottom: 50px;
+        margin-left: auto !important;
+        margin-right: auto!important;
     }
     .romantic {
         margin-bottom: 50px;
+        margin-left: auto !important;
+        margin-right: auto!important;
     }
     .stepin {
         margin-top: 0px!important;

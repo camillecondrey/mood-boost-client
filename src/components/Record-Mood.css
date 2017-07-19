@@ -74,14 +74,14 @@ background-image: linear-gradient(to right, #c2e59c, #64b3f4);
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
+   and (min-device-width: 375px) 
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
       .record-heading {
           margin-top: 80px;
       }
-      #record-mood {
-          margin-left: 50px;
+      .cause {
+          width:350px;
       }
   }
 

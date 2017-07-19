@@ -17,8 +17,8 @@
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .anger .anxiety .blue {
     margin-left: auto;
@@ -32,13 +32,19 @@
     }
     .anxiety {
         margin-bottom: 50px;
+        margin-left: auto !important;
+        margin-right: auto!important;
     }
 
     .blue {
         margin-bottom: 50px;
+        margin-left: auto!important;
+        margin-right: auto!important;
     }
     .anger {
         /*margin-bottom: 50px;*/
+        margin-left: auto;
+        margin-right: auto;
     }
   }
 

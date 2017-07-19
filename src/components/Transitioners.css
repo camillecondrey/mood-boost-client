@@ -12,8 +12,8 @@
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .read .watch .listen .nourish {
     margin-left: auto;
@@ -24,10 +24,24 @@
 
     .read {
         margin-bottom: 50px;
+        margin-left: auto !important;
+        margin-right: auto!important;
     }
 
     .listen {
         margin-bottom: 50px;
+        margin-left: auto !important;
+        margin-right: auto!important;
+    }
+    .watch {
+        
+        margin-left: auto !important;
+        margin-right: auto!important;
+    }
+    .nourish {
+        
+        margin-left: auto !important;
+        margin-right: auto!important;
     }
   }
 

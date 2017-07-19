@@ -74,7 +74,7 @@ section {
   font-size: 20px;
 }
 
-@media only screen 
+/*@media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
@@ -90,9 +90,9 @@ section {
     .app-name {
       width: 550px;
       margin-right: 0px;
-    }
-    .about-h3 {
-      /*width: 100%;*/
+    }*/
+    /*.about-h3 {
+     
       margin-left: 70px;
       margin-right: 0px;
     }
@@ -112,10 +112,10 @@ section {
     display: block;
     width: 100%;
 
-    }
+    }*/
 
-    .app-sub-heading {
-      /*width: 100%;*/
+    /*.app-sub-heading {
+   
       width: 550px;
       margin-right: 0px!important;
     }
@@ -132,14 +132,14 @@ section {
     }
 
     .about-header  {
-      /*width: 100%;*/
+    
       height: auto;
       margin-left: 18px !important;
       margin-right: auto;
     }
     .app-name {
       padding-top: 100px;
-      /*width: 100%;*/
+   
       width: 550px;
       margin-right: 0px!important;
 
@@ -166,6 +166,116 @@ section {
     }
     .frown {
       display: none;
+    }
+    .screenshot {
+      display: none;
+    }
+    .screenshot2 {
+      display: none;
+    }
+    .screenshot3{
+      display: none;
+    }
+    
+}*/
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    * {
+      max-width: 375px;
+    }
+    
+    html {
+      width: 375px;
+      margin: 0;
+    }
+
+    .app-name {
+      width: 350px;
+      margin-right: 0px;
+    }
+    .about-h3 {
+      /*width: 100%;*/
+      width: 250px;
+      margin-left: 70px;
+      margin-right: 0px;
+    }
+    .h3-div {
+    margin-left: auto;
+    width: 100% !important;
+    margin-right: auto;
+    display: block !important;
+    }
+
+    .title {
+      height: 800px;
+    }
+    .image-div {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+
+    }
+
+    .app-sub-heading {
+      /*width: 100%;*/
+      width: 350px;
+      margin-right: 0px!important;
+    }
+
+    .about-section {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      background-color: #1c92d2;
+      text-align: center;
+    }
+
+    .about-header  {
+      /*width: 100%;*/
+      height: auto;
+      margin-left: 18px !important;
+      margin-right: auto;
+    }
+    .app-name {
+      padding-top: 100px;
+      /*width: 100%;*/
+      width: 350px;
+      /*font-size: 50px;*/
+      margin-right: 0px!important;
+
+    }
+    #mobile-trans {
+      background-color: #f9f9f9;
+
+    }
+    #mobile-p {
+      color: #1c92d2;
+    }
+    .about-h32 {
+      color: #1c92d2 !important;
+      width: 200px !important;
+      margin-left: 20px;
+      margin-right: 0px;
+    }
+    .smile {
+      display: none!important;
+      color: black;
+      
+    }
+    .about-p {
+      width: 250px;
+      margin-right: 0px;
+    }
+    .frown {
+      display: none !important;
+      
     }
     .screenshot {
       display: none;

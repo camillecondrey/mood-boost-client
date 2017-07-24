@@ -3,10 +3,10 @@ import { handle } from 'redux-pack';
 import {FETCH_MOOD, RECORD_MOOD} from '../actions/index';
 
 let initialState = {
-    description: "testing",
-    date: "testing",
-    cause: "testing",
-    duration: "testing",
+    description: "",
+    date: "",
+    cause: "",
+    duration: "",
     moods: null
     // badCredentials: false
 }

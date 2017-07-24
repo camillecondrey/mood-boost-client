@@ -17,12 +17,12 @@ export class LogIn extends React.Component {
 
     handleLogIn (e) {
         e.preventDefault();
-        if (!$('#username').val()){
-            alert('Please enter username');
-        }
-        else if (!$('#password').val()){
-            alert('Please enter password');
-        }
+        // if (!$('#username').val()){
+        //     alert('Please enter username');
+        // }
+        // else if (!$('#password').val()){
+        //     alert('Please enter password');
+        // }
             this.props.dispatch(
                 logIn($('#username').val(), $('#password').val()))
             .then(() => {

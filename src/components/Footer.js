@@ -10,11 +10,11 @@ export class Footer extends Component {
         <footer>
           <div className="foot">
             
-              <a target="_blank" href="https://github.com/camillecondrey"><img alt="github-icon" className="icon" src="../images/GitHub-Mark-Light-32px.png"></img></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/camillecondrey"><img alt="github-icon" className="icon" src="../images/GitHub-Mark-Light-32px.png"></img></a>
            
             <p className="created-by">Created by Camille Condrey</p>
             
-              <a target="_blank" href="https://www.linkedin.com/in/camille-condrey-bb65568b/"><img className="icon" id="linkedin" alt="linkedin-icon" src="../images/In-White-34px-R.png"></img></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/camille-condrey-bb65568b/"><img className="icon" id="linkedin" alt="linkedin-icon" src="../images/In-White-34px-R.png"></img></a>
             
           </div>
         </footer>

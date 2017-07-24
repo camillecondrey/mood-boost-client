@@ -290,10 +290,53 @@ section {
     
 }
 
+/*@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    html {
+      width: 1024px;
+      margin-right: 0px;
+    }
+    .title {
+      width: 1024px;
+    }
+    .how-div {
+      width: 1024px;
+    }
+    .about-section {
+      width: 1024px;
+    }
+    .create {
+      width: 1024px;
+    }
+    .screenshot{
+      margin-right:0px;
+    }
+    .about-p {
+      width:400px;
+      margin-right:0px;
+    }
+    .screenshot3{
+      width:500px!important;
+      margin-right:0px;
+    }
+    .about-h32 {
+      width: 200px !important;
+      margin-right:0px;
+    }
+}
+
+
+
+
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
+  and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) {
+
     html {
       max-width: 768px;
     }
@@ -326,7 +369,7 @@ section {
       width: 380px !important;
       margin-right: 0px;
     }
-}
+}*/
 
 .about-h32 {
   width: 600px;

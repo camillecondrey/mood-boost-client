@@ -4,8 +4,8 @@
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .tranquil .romantic .energized {
     margin-left: auto;
@@ -35,6 +35,41 @@
         margin-top: 0px!important;
     }
   }
+
+@media only screen 
+  and (min-device-width: 768px) 
+  
+  and (-webkit-min-device-pixel-ratio: 1) {
+      html {
+          width: 768px;
+      }
+      .heading-section {
+          width: 768px !important;
+          border-radius: 0px!important;
+      }
+
+      .stepin {
+          margin-top: 0px!important;
+      }
+  }
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      .tranquil {
+          margin-top: 50px;
+      }
+      .energized {
+          margin-top:50px;
+      }
+  }
+
+
+
+
+
 
 .tranquil {
     width: 220px;

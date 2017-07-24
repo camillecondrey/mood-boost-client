@@ -12,7 +12,7 @@ export default class MoodEntry extends Component {
     render () {
         
         let date = new Date(this.props.mood.date)
-        console.log(date, this.props.mood.date);
+        // console.log(date, this.props.mood.date);
 
 
         return (

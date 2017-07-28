@@ -112,16 +112,4 @@
       }
   }
 
-  @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-      html {
-          width: 1024px;
-      }
-      .heading-section {
-          width: 1024px!important;
-          border-radius: 0 0 1000px 0;
-      }
-  }
+  

@@ -13,9 +13,9 @@ export class CreateAccount extends React.Component {
         if (!$('#username').val()){
             alert('Please enter username');
         }
-        else if (!$('#password').val()){
-            alert('Please enter password');
-        }
+        // else if (!$('#password').val()){
+        //     alert('Please enter password');
+        // }
         else {
             var newUser = {
                     username: $("#username").val() , 

@@ -30,9 +30,10 @@
 
 .tracker-body {
     background: linear-gradient(#4568DC, #B06AB3);
-    height: 100%;
-     margin-bottom: 0px;
+    /*height: ;*/
     padding-bottom: 0px;
+    margin:0;
+    padding:0;
 
 }
 
@@ -48,8 +49,9 @@ body {
 }
 
 .mood-collection {
-height: 400px;
-height: 100%
+
+height: 100%;
+
 }
 
 @media only screen 
@@ -58,7 +60,7 @@ height: 100%
   and (-webkit-min-device-pixel-ratio: 2) {
       .tracker-body {
           width: 100%;
-          /*width: 320px;*/
+       
       }
       .entry-duration {
           margin-left: 0px!important;

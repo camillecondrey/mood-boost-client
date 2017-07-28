@@ -7,8 +7,8 @@ let initialState = {
     date: "",
     cause: "",
     duration: "",
-    moods: null
-    // badCredentials: false
+    moods: null,
+    badCredentials: false
 }
 
 if (localStorage.user) {

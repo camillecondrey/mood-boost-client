@@ -21,7 +21,7 @@ export class App extends Component {
           <Route exact path="/boosters" component={Boosters} />
           <Route exact path="/record" component={RecordMood} />
           <Route exact path="/tracker" component={MoodTracker} />
-          <Route exact path="/mood/:moodId" component={Mood} />
+          <Route exact path="/mood/:moodId" onUpdate={() => window.scrollTo(0, 0)} component={Mood} />
         </container>
       </Router>
  

@@ -39,7 +39,7 @@ export class CreateAccount extends React.Component {
                 <div className="create">
                     <h3 className="create-h3">A better mood awaits you</h3>
                     <div className="smile2"></div>
-                    <p className="create-p">Create a username and password to start tracking your moods <br/> or demo this app with username <b>abc</b> and password <b>123</b></p>
+                    <p className="create-p">Create a username and password to start tracking your moods <br/> or demo this app by logging in above with username <b>abc</b> and password <b>123</b></p>
                     <form className="create-form" method="post" onSubmit={this.handleNewUser.bind(this)}>
                         <input type="username" placeholder="username" name="username" id="username" required/>
                         <input type="password" placeholder="password" name="password" id="password" required/>

@@ -49,7 +49,7 @@ handleMoodAdd(e) {
         <div className="record-body">
         <Link to="/tracker"><button className="return">Back to tracker</button></Link>
         <section className="record-section">
-            <h2 className="record-heading" >Record Mood</h2>
+            
             <form id="record-mood" onSubmit={this.handleMoodAdd.bind(this)}>
                 <div className="form-section">
                     <label>When were you in this mood?</label>

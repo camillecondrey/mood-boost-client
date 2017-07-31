@@ -32,7 +32,7 @@ export class StepInto extends Component {
             </div>
             </Link>
             </a>
-            <a href="" onClick={e => this.romantic(e)}><Link to="/mood/Romantic">
+            <a href="" onClick={e => this.romantic(e)}><Link to="/mood/Romantic"onUpdate={() => window.scrollTo(0, 0)}>
             <div id="hover" className="romantic">
                 <img alt="heart" className="romance-img" src="../images/romance.png"></img>
                 <h1 className="mood-title">Romantic</h1>
